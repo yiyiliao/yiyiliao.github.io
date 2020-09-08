@@ -1,0 +1,10 @@
+---
+layout: page
+title: "GRAF: Generative Radiance Fields for 3D-Aware Image Synthesis"
+img: /assets/img/graf.png
+---
+[Katja Schwarz\*](https://avg.is.tuebingen.mpg.de/person/kaschwarz), Yiyi Liao\*, [Michael Niemeyer](https://avg.is.tuebingen.mpg.de/person/mniemeyer), and [Andreas Geiger](https://avg.is.tuebingen.mpg.de/person/ageiger) (\*equal contribution)
+<br/>
+Arxiv
+<br/>
+[[Paper](https://arxiv.org/pdf/2007.02442.pdf)]
