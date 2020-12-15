@@ -5,6 +5,8 @@ img: /assets/img/graf.png
 ---
 [Katja Schwarz\*](https://avg.is.tuebingen.mpg.de/person/kaschwarz), Yiyi Liao\*, [Michael Niemeyer](https://avg.is.tuebingen.mpg.de/person/mniemeyer), and [Andreas Geiger](https://avg.is.tuebingen.mpg.de/person/ageiger) (\*equal contribution)
 <br/>
-Arxiv
+Advances in Neural Information Processing Systems (NeurIPS), 2020
 <br/>
-[[Paper](https://arxiv.org/pdf/2007.02442.pdf)]
+[[Paper](http://www.cvlibs.net/publications/Schwarz2020NEURIPS.pdf)]
+[[Code](https://github.com/autonomousvision/graf)]
+[[Blog](https://autonomousvision.github.io/graf)]
