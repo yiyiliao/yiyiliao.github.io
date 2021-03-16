@@ -1,0 +1,10 @@
+---
+layout: page
+title: "Learning Steering Kernels for Sparse-to-Dense Depth Estimation"
+img: /assets/img/tip2021.png
+---
+[Lina Liu](linaliu@zju.edu.cn), Yiyi Liao\*, [Yue Wang](https://ywang-zju.github.io/), [Andreas Geiger](http://www.cvlibs.net/), [Yong Liu](https://person.zju.edu.cn/en/yongliu) (\*corresponding author)
+<br/>
+IEEE Transactions on Image Processing (TIP), Accepted
+<br/>
+[[Paper](http://www.cvlibs.net/publications/Liu2021TIP.pdf)]
