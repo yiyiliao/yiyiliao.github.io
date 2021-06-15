@@ -16,3 +16,19 @@ layout: page
 {% endif %}
 
 {{ content }}
+
+{% if page.social %}
+<div class="social">
+  <div class="contact-icons">
+    {% include social.html %}
+  </div>
+  <div class="contact-note">{{ site.contact_note }}</div>
+</div>
+{% endif %}
+
+{% if page.news %}
+  {% include news.html %}
+{% endif %}
+
+
+{% include projects.html %}

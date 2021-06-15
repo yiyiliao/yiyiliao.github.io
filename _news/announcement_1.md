@@ -1,7 +1,7 @@
 ---
 layout: post
-date: 2015-10-22 15:59:00-0400
+date: 2021-05-19 15:59:00-0400
 inline: true
 ---
 
-A simple inline announcement.
+I was acknowledged as [Outstanding Reviewer](http://cvpr2021.thecvf.com/node/184) at CVPR 2020.
