@@ -3,6 +3,6 @@ layout: page
 title: "KITTI-360"
 img: /assets/img/kitti360.png
 ---
-Yiyi Liao, [Jue Xie](https://scholar.google.com.hk/citations?user=8B9EaL8AAAAJ&hl=en), [Andreas Geiger](http://www.cvlibs.net/) 
+Yiyi Liao, [Jun Xie](https://scholar.google.com.hk/citations?user=8B9EaL8AAAAJ&hl=en), [Andreas Geiger](http://www.cvlibs.net/) 
 <br/>
 [[Website](http://www.cvlibs.net/datasets/kitti-360/)]
