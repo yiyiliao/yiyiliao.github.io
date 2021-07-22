@@ -10,3 +10,4 @@ IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2021
 [[Paper](http://www.cvlibs.net/publications/Tosi2021CVPR.pdf)]
 [[Code](https://github.com/fabiotosi92/SMD-Nets)]
 [[Blog](https://autonomousvision.github.io/smdnets/)]
+[[BEST OF CVPR](https://www.rsipvision.com/ComputerVisionNews-2021July/30/)]
