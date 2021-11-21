@@ -1,8 +1,97 @@
-Adams:
-    url: https://en.wikipedia.org/wiki/Edwin_Plimpton_Adams
+"Schwarz":
+  - firstname: ["Katja", "Katja<sup>*</sup>", "K."]
+    url: https://katjaschwarz.github.io/
 
-Podolsky:
-    url: https://en.wikipedia.org/wiki/Boris_Podolsky
+"Geiger":
+  - firstname: ["Andreas", "A."]
+    url: http://www.cvlibs.net/
 
-Rosen:
-    url: https://en.wikipedia.org/wiki/Nathan_Rosen
+"Niemeyer":
+  - firstname: ["Michael", "M."]
+    url: https://m-niemeyer.github.io/
+
+"Mescheder":
+  - firstname: ["Lars", "L."]
+    url: https://avg.is.tuebingen.mpg.de/person/lmescheder
+
+"Peng":
+  - firstname: ["Songyou", "S."]
+    url: https://pengsongyou.github.io/ 
+
+"Reiser":
+  - firstname: ["Christian", "C."]
+    url: https://avg.is.tuebingen.mpg.de/person/creiser
+
+"Wang":
+  - firstname: ["Yue", "Y."]
+    url: https://ywang-zju.github.io/ 
+
+"Tosi":
+  - firstname: ["Fabio"]
+    url: http://vision.disi.unibo.it/~ftosi/
+
+"Schmitt":
+  - firstname: ["Carolin", "C."]
+    url: https://avg.is.tuebingen.mpg.de/person/cschmitt 
+
+"Black":
+  - firstname: ["Michael", "M."]
+    url: https://ps.is.tuebingen.mpg.de/person/black 
+
+"Riegler":
+  - firstname: ["Gernot", "G.", "Gernot<sup>*</sup>"]
+    url: https://griegler.github.io/ 
+
+"Donné":
+  - firstname: ["Simon", "S."]
+    url: https://donnessime.github.io/ 
+
+"Pollefeys":
+  - firstname: ["Marc", "M."]
+    url: https://people.inf.ethz.ch/pomarc/ 
+
+"Jiang":
+  - firstname: ["Chiyu Max", "Chiyu<sup>&#x0266F;</sup>", "Chiyu", "C. M."] 
+    url: https://www.maxjiang.ml/
+
+"Sevilla-Lara":
+  - firstname: ["Laura", "L."]
+    url: https://people.cs.umass.edu/~lsevilla/ 
+
+"Guney":
+  - firstname: ["Fatma", "F."]
+    url: https://ps.is.tuebingen.mpg.de/person/fguney
+
+"Liu":
+  - firstname: ["Yong", "Yong<sup>&#x0266F;</sup>"]
+    url: https://person.zju.edu.cn/en/yongliu
+  - firstname: ["Lina"]
+    url: https://april.zju.edu.cn/team/lina-liu/
+
+"Kodagoda":
+  - firstname: ["Sarath", "S."] 
+    url: https://www.uts.edu.au/staff/sarath.kodagoda
+
+"Koltun":
+  - firstname: ["Vladlen", "V."]
+    url: http://vladlen.info/
+
+"Jampani":
+  - firstname: ["Varun", "V."]
+    url: https://varunjampani.github.io/
+
+"Shi":
+  - firstname: ["Lei", "L."]
+    url: https://au.linkedin.com/in/lei-shi-342b152b
+
+"Huang":
+  - firstname: ["Lichao", "L."]
+    url: https://scholar.google.com/citations?user=F2e_jZMAAAAJ
+
+"Yu":
+  - firstname: ["Yinan", "Y."]
+    url: http://www.cbsr.ia.ac.cn/users/ynyu/
+
+"Xie":
+  - firstname: ["Jun", "J."]
+    url: http://www.cbsr.ia.ac.cn/users/ynyu/

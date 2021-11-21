@@ -1,147 +1,283 @@
-@article{wang2017scalable,
-  title={Scalable Learning Framework for Traversable Region Detection Fusing With Appearance and Geometrical Information},
-  author={Wang, Yue and Liu, Yong and Liao, Yiyi and Xiong, Rong},
-  journal={IEEE Transactions on Intelligent Transportation Systems},
-  volume={18},
-  number={12},
-  pages={3267--3281},
-  year={2017},
-  publisher={IEEE}
+@STRING{CVPR = {Proc. IEEE Conf. on Computer Vision and Pattern	Recognition (CVPR)}}
+@STRING{ECCV = {Proc. of the European Conf. on Computer Vision (ECCV)}}
+@STRING{ICCV = {Proc. of the IEEE International Conf. on Computer Vision (ICCV)}}
+@STRING{ICRA = {Proc. of the IEEE International Conf. on Robotics and Automation (ICRA)}}
+@STRING{THREEDV = {Proc. of the International Conf. on 3D Vision (3DV)}}
+@STRING{TIP = {IEEE Trans. on  Image Processing (TIP)}}
+@STRING{NEURIPS = {Advances in Neural Information Processing Systems (NeurIPS)}}
+@STRING{ARXIV = {arXiv.org}}
+
+@inproceedings{Peng2021NEURIPS,
+  author = {Songyou Peng and Chiyu<sup>&#x0266F;</sup> Jiang and Yiyi<sup>&#x0266F;</sup> Liao and Michael Niemeyer and Marc Pollefeys and Andreas Geiger},
+  title = {Shape As Points: A Differentiable Poisson Solver},
+  booktitle = NEURIPS,
+  year = {2021},
+  abstract = {In recent years, neural implicit representations gained popularity in 3D reconstruction due to their expressiveness and flexibility. However, the implicit nature of neural implicit representations results in slow inference times and requires careful initialization. In this paper, we revisit the classic yet ubiquitous point cloud representation and introduce a differentiable point-to-mesh layer using a differentiable formulation of Poisson Surface Reconstruction (PSR) which allows for a GPU-accelerated fast solution of the indicator function given an oriented point cloud. The differentiable PSR layer allows us to efficiently and differentiably bridge the explicit 3D point representation with the 3D mesh via the implicit indicator field, enabling end-to-end optimization of surface reconstruction metrics such as Chamfer distance. This duality between points and meshes hence allows us to represent shapes as oriented point clouds, which are explicit, lightweight and expressive. Compared to neural implicit representations, our Shape-As-Points (SAP) model is more interpretable, lightweight, and accelerates inference time by one order of magnitude. Compared to other explicit representations such as points, patches, and meshes, SAP produces topology-agnostic, watertight manifold surfaces. We demonstrate the effectiveness of SAP on the task of surface reconstruction from unoriented point clouds and learning-based reconstruction.},
+  pdf = {http://www.cvlibs.net/publications/Peng2021NEURIPS.pdf},
+  supp = {http://www.cvlibs.net/publications/Peng2021NEURIPS_supplementary.pdf},
+  code = {https://github.com/autonomousvision/shape_as_points},
+  teaser_video = {sap_teaser.mp4},
+  selected = True,
 }
 
-@article{liao2017place,
-  title={Place classification with a graph regularized deep neural network},
-  author={Liao, Yiyi and Kodagoda, Sarath and Wang, Yue and Shi, Lei and Liu, Yong},
-  journal={IEEE Transactions on Cognitive and Developmental Systems},
-  volume={9},
-  number={4},
-  pages={304--315},
-  year={2017},
-  publisher={IEEE}
+@inproceedings{Schwarz2021NEURIPS,
+  title = {On the Frequency Bias of Generative Models},
+  author = {Schwarz, Katja and Liao, Yiyi and Geiger, Andreas},
+  booktitle = NEURIPS,
+  year = {2021},
+  abstract = {The key objective of Generative Adversarial Networks (GANs) is to generate new data
+  with the same statistics as the provided training data. However, multiple recent works show that
+  state-of-the-art architectures yet struggle to achieve this goal. In particular, they report an
+  elevated amount of high frequencies in the spectral statistics which makes it straightforward to
+  distinguish real and generated images. Explanations for this phenomenon are controversial: While
+  most works attribute the artifacts to the generator, other works point to the discriminator. We
+  take a sober look at those explanations and provide insights on what makes proposed measures
+  against high-frequency artifacts effective. To achieve this, we first independently assess the
+  architectures of both the generator and discriminator and investigate if they exhibit a frequency
+  bias that makes learning the distribution of high-frequency content particularly problematic.
+  Based on these experiments, we make the following four observations: 1) Different upsampling
+  operations bias the generator towards different spectral properties. 2) Checkerboard artifacts
+  introduced by upsampling cannot explain the spectral discrepancies alone as the generator is able
+  to compensate for these artifacts. 3) The discriminator does not struggle with detecting high
+  frequencies per se but rather struggles with frequencies of low magnitude. 4) The downsampling
+  operations in the discriminator can impair the quality of the training signal it provides. In
+  light of these findings, we analyze proposed measures against high-frequency artifacts in
+  state-of-the-art GAN training but find that none of the existing approaches can fully resolve
+  spectral artifacts yet. Our results suggest that there is great potential in improving the
+  discriminator and that this could be key to match the distribution of the training data more
+  closely.
+},
+  pdf = {http://www.cvlibs.net/publications/Schwarz2021NEURIPS.pdf},
+  supp = {http://www.cvlibs.net/publications/Schwarz2021NEURIPS_supplementary.pdf},
+  code = {https://github.com/autonomousvision/frequency_bias},
+  teaser = {frequency_bias.gif},
+  selected = True,
 }
 
-@article{liao2017graph,
-  title={Graph regularized auto-encoders for image representation},
-  author={Liao, Yiyi and Wang, Yue and Liu, Yong},
-  journal={IEEE Transactions on Image Processing},
-  volume={26},
-  number={6},
-  pages={2839--2852},
-  year={2017},
-  publisher={IEEE}
+@ARTICLE{Liao2021ARXIV,
+  author = {Yiyi Liao and Jun Xie and Andreas Geiger},
+  title = {KITTI-360: A Novel Dataset and Benchmarks for Urban Scene Understanding in 2D and 3D},
+  journal = {Arxiv},
+  year = {2021},
+  abstract = {For the last few decades, several major subfields of artificial intelligence including computer vision, graphics, and robotics have progressed largely independently from each other. Recently, however, the community has realized that progress towards robust intelligent systems such as self-driving cars requires a concerted effort across the different fields. This motivated us to develop KITTI-360, successor of the popular KITTI dataset. KITTI-360 is a suburban driving dataset which comprises richer input modalities, comprehensive semantic instance annotations and accurate localization to facilitate research at the intersection of vision, graphics and robotics. For efficient annotation, we created a tool to label 3D scenes with bounding primitives and developed a model that transfers this information into the 2D image domain, resulting in over 150k semantic and instance annotated images and 1B annotated 3D points. Moreover, we established benchmarks and baselines for several tasks relevant to mobile perception, encompassing problems from computer vision, graphics, and robotics on the same dataset. KITTI-360 will enable progress at the intersection of these research areas and thus contributing towards solving one of our grand challenges: the development of fully autonomous self-driving systems.},
+  pdf = {https://arxiv.org/abs/2109.13410},
+  code = {http://www.cvlibs.net/datasets/kitti-360/},
+  teaser = {kitti360.png},
 }
 
-@article{zhao2016filtering,
-  title={Filtering based adaptive visual odometry sensor framework robust to blurred images},
-  author={Zhao, Haiying and Liu, Yong and Xie, Xiaojia and Liao, Yiyi and Liu, Xixi},
-  journal={Sensors},
-  volume={16},
-  number={7},
-  pages={1040},
-  year={2016},
-  publisher={Multidisciplinary Digital Publishing Institute}
+
+@inproceedings{Reiser2021ICCV,
+  author = {Christian Reiser and Songyou Peng and Yiyi Liao and Andreas Geiger},
+  title = {KiloNeRF: Speeding up Neural Radiance Fields with Thousands of Tiny MLPs},
+  booktitle = ICCV,
+  year = {2021},
+  abstract = {NeRF synthesizes novel views of a scene with unprecedented quality by fitting a neural radiance field to RGB images. However, NeRF requires querying a deep Multi-Layer Perceptron (MLP) millions of times, leading to slow rendering times, even on modern GPUs. In this paper, we demonstrate that significant speed-ups are possible by utilizing thousands of tiny MLPs instead of one single large MLP. In our setting, each individual MLP only needs to represent parts of the scene, thus smaller and faster-to-evaluate MLPs can be used. By combining this divide-and-conquer strategy with further optimizations, rendering is accelerated by two orders of magnitude compared to the original NeRF model without incurring high storage costs. Further, using teacher-student distillation for training, we show that this speed-up can be achieved without sacrificing visual quality.},
+  pdf = {http://www.cvlibs.net/publications/Reiser2021ICCV.pdf},
+  supp = {http://www.cvlibs.net/publications/Reiser2021ICCV_supplementary.pdf},
+  code = {https://creiser.github.io/kilonerf/},
+  blog = {https://autonomousvision.github.io/kilonerf/},
+  teaser = {iccv2021.png},
+  selected = True,
+
 }
 
-@article{liu2016general,
-  title={General subspace constrained non-negative matrix factorization for data representation},
-  author={Liu, Yong and Liao, Yiyi and Tang, Liang and Tang, Feng and Liu, Weicong},
-  journal={Neurocomputing},
-  volume={173},
-  pages={224--232},
-  year={2016},
-  publisher={Elsevier}
+@inproceedings{Riegler2019CVPR,
+  title = {Connecting the Dots: Learning Representations for Active Monocular Depth Estimation},
+  author = {Riegler, Gernot<sup>*</sup> and Liao, Yiyi<sup>*</sup> and Donné, Simon and Koltun, Vladlen and Geiger, Andreas},
+  booktitle = CVPR,
+  year = {2019},
+  abstract = {We propose a technique for depth estimation with a monocular structured-light camera, \ie, a calibrated stereo set-up with one camera and one laser projector. Instead of formulating the depth estimation via a correspondence search problem, we show that a simple convolutional architecture is sufficient for high-quality disparity estimates in this setting. As accurate ground-truth is hard to obtain, we train our model in a self-supervised fashion with a combination of photometric and geometric losses. Further, we demonstrate that the projected pattern of the structured light sensor can be reliably separated from the ambient information. This can then be used to improve depth boundaries in a weakly supervised fashion by modeling the joint statistics of image and depth edges. The model trained in this fashion compares favorably to the state-of-the-art on challenging synthetic and real-world datasets. In addition, we contribute a novel simulator, which allows to benchmark active depth prediction algorithms in controlled conditions.},
+  pdf = {http://www.cvlibs.net/publications/Riegler2019CVPR.pdf},
+  supp = {http://www.cvlibs.net/publications/Riegler2019CVPR_supplementary.pdf},
+  poster = {http://www.cvlibs.net/publications/Riegler2019CVPR_poster.pdf},
+  code = {https://github.com/autonomousvision/connecting_the_dots},
+  teaser = {cvpr2019.png},
 }
 
-@inproceedings{liao2016understand,
-  title={Understand scene categories by objects: A semantic regularized scene classifier using convolutional neural networks},
-  author={Liao, Yiyi and Kodagoda, Sarath and Wang, Yue and Shi, Lei and Liu, Yong},
-   booktitle={Proc. IEEE International Conf. on Robotics and Automation},
-  pages={2318--2325},
-  year={2016},
-}
-
-@inproceedings{liao2017parse,
-  title={Parse geometry from a line: Monocular depth estimation with partial laser observation},
-  author={Liao, Yiyi and Huang, Lichao and Wang, Yue and Kodagoda, Sarath and Yu, Yinan and Liu, Yong},
-  booktitle={Proc. IEEE International Conf. on Robotics and Automation},
-  pages={5059--5066},
-  year={2017},
-}
-
-@inproceedings{feng2015loind,
-  title={Loind: An illumination and scale invariant rgb-d descriptor},
-  author={Feng, Guanghua and Liu, Yong and Liao, Yiyi},
-  booktitle={Proc. IEEE International Conf. on Robotics and Automation},
-  pages={1893--1898},
-  year={2015},
-}
-
-@inproceedings{zhang2015traversable,
-  title={Traversable region detection with a learning framework},
-  author={Zhang, Qingquan and Liu, Yong and Liao, Yiyi and Wang, Yue},
-  booktitle={Proc. IEEE International Conf. on Robotics and Automation},
-  pages={1678--1683},
-  year={2015},
-}
-
-@inproceedings{liao2014image,
-  title={Image representation learning using graph regularized auto-encoders},
-  author={Liao, Yiyi and Wang, Yue and Liu, Yong},
-  booktitle={International Conference on Learning Representation (workshop)},
-  year={2014},
+@inproceedings{liao2018cvpr,
+  title={Deep Marching Cubes: Learning Explicit Surface Representations},
+  author={Liao, Yiyi and Donné, Simon and Geiger, Andreas},
+  booktitle=CVPR,
+  year={2018},
+  abstract = {Existing learning based solutions to 3D surface prediction cannot be trained end-to-end as they operate on intermediate representations (eg, TSDF) from which 3D surface meshes must be extracted in a post-processing step (eg, via the marching cubes algorithm). In this paper, we investigate the problem of end-to-end 3D surface prediction. We first demonstrate that the marching cubes algorithm is not differentiable and propose an alternative differentiable formulation which we insert as a final layer into a 3D convolutional neural network. We further propose a set of loss functions which allow for training our model with sparse point supervision. Our experiments demonstrate that the model allows for predicting sub-voxel accurate 3D shapes of arbitrary topology. Additionally, it learns to complete shapes and to separate an object's inside from its outside even in the presence of sparse and incomplete ground truth. We investigate the benefits of our approach on the task of inferring shapes from 3D point clouds. Our model is flexible and can be combined with a variety of shape encoder and shape inference techniques.},
+  pdf = {http://www.cvlibs.net/publications/Liao2018CVPR.pdf},
+  code = {http://www.cvlibs.net/redirect.php?site=deep_marching_cubes},
+  teaser = {cvpr2018.png},
 }
 
 @inproceedings{Sevilla:GCPR:2018,
   title = {On the Integration of Optical Flow and Action Recognition},
-  author = {Sevilla-Lara, Laura and Liao, Yiyi and Guney, Fatma and Jampani, Varun and Geiger, Andreas and Black, Michael J.},
+  author = {Sevilla-Lara, Laura and Liao, Yiyi and Guney, Fatma and Jampani, Varun and Geiger, Andreas and Black, Michael},
   booktitle = {German Conference on Pattern Recognition (GCPR)},
-  month = oct,
   year = {2018},
-  month_numeric = {10}
-}
-
-@article{liao2018cvpr,
-  title={Deep Marching Cubes: Learning Explicit Surface Representations},
-  author={Liao, Yiyi and Donn\'{e}, Simon and Geiger, Andreas},
-  journal={IEEE Conf. on Computer Vision and Pattern Recognition (CVPR)},
-  year={2018},
+  abstract = {Most of the top performing action recognition methods use optical flow as a black box input. Here we take a deeper look at the combination of flow and action recognition, and investigate why optical flow is helpful, what makes a flow method good for action recognition, and how we can make it better. In particular, we investigate the impact of different flow algorithms and input transformations to better understand how these affect a state-of-the-art action recognition method. Furthermore, we fine tune two neural-network flow methods end-to-end on the most widely used action recognition dataset (UCF101). Based on these experiments, we make the following five observations: 1) optical flow is useful for action recognition because it is invariant to appearance, 2) optical flow methods are optimized to minimize end-point-error (EPE), but the EPE of current methods is not well correlated with action recognition performance, 3) for the flow methods tested, accuracy at boundaries and at small displacements is most correlated with action recognition performance, 4) training optical flow to minimize classification error instead of minimizing EPE improves recognition performance, and 5) optical flow learned for the task of action recognition differs from traditional optical flow especially inside the human body and at the boundary of the body. These observations may encourage optical flow researchers to look beyond EPE as a goal and guide action recognition researchers to seek better motion cues, leading to a tighter integration of the optical flow and action recognition communities.},
+  pdf = {http://www.cvlibs.net/publications/Sevilla-Lara2018GCPR.pdf},
+  teaser = {gcpr2018.png},
 }
 
 
-@article{Riegler2019CVPR,
-  title = {Connecting the Dots: Learning Representations for Active Monocular Depth Estimation},
-  author = {Riegler, Gernot and Liao, Yiyi and Donn\'{e}, Simon and Koltun, Vladlen and Geiger, Andreas},
-  journal={IEEE Conf. on Computer Vision and Pattern Recognition (CVPR)},
-  year = {2019},
-}
 
-@article{Liao2020CVPR,
-  title = {Towards Unsupervised Learning of Generative Models for 3D Controllable Image Synthesis},
-  author = {Liao, Yiyi and Schwarz, Katja and Mescheder, Lars and Geiger, Andreas},
-  journal={IEEE Conf. on Computer Vision and Pattern Recognition (CVPR)},
-  year = {2020}
-}
 
 @inproceedings{Schwarz2020NEURIPS,
   title = {GRAF: Generative Radiance Fields for 3D-Aware Image Synthesis},
-  author = {Schwarz, Katja and Liao, Yiyi and Niemeyer, Michael and Geiger, Andreas},
-  booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
-  year = {2020}
+  author = {Schwarz, Katja<sup>*</sup> and Liao, Yiyi<sup>*</sup> and Niemeyer, Michael and Geiger, Andreas},
+  booktitle = NEURIPS,
+  year = {2020},
+  abstract = {While 2D generative adversarial networks have enabled high-resolution image synthesis,
+  they largely lack an understanding of the 3D world and the image formation process. Thus, they do
+  not provide precise control over camera viewpoint or object pose. To address this problem, several
+  recent approaches leverage intermediate voxel-based representations in combination with differentiable
+  rendering. However, existing methods either produce low image resolution or fall short in disentangling
+  camera and scene properties, e.g., the object identity may vary with the viewpoint. In this paper,
+  we propose a generative model for radiance fields which have recently proven successful for novel view
+  synthesis of a single scene. In contrast to voxel-based representations, radiance fields are not
+  confined to a coarse discretization of the 3D space, yet allow for disentangling camera and scene
+  properties while degrading gracefully in the presence of reconstruction ambiguity. By introducing a
+  multi-scale patch-based discriminator, we demonstrate synthesis of high-resolution images while training
+  our model from unposed 2D images alone. We systematically analyze our approach on several challenging
+  synthetic and real-world datasets. Our experiments reveal that radiance fields are a powerful
+  representation for generative image synthesis, leading to 3D consistent models that render with high
+  fidelity.
+},
+  pdf = {http://www.cvlibs.net/publications/Schwarz2020NEURIPS.pdf},
+  supp = {http://www.cvlibs.net/publications/Schwarz2020NEURIPS_supplementary.pdf},
+  code = {https://github.com/autonomousvision/graf},
+  blog = {https://autonomousvision.github.io/graf/},
+  poster = {http://www.cvlibs.net/publications/Schwarz2020NEURIPS_poster.pdf},
+  video = {https://www.youtube.com/watch?v=akQf7WaCOHo},
+  teaser = {graf.gif},
+  selected = True,
+}
+
+@inproceedings{Liao2020CVPR,
+  title = {Towards Unsupervised Learning of Generative Models for 3D Controllable Image Synthesis},
+  author = {Liao, Yiyi<sup>*</sup> and Schwarz, Katja<sup>*</sup> and Mescheder, Lars and Geiger, Andreas},
+  booktitle = CVPR,
+  year = {2020},
+  abstract = {In recent years, Generative Adversarial Networks have achieved impressive results
+   in photorealistic image synthesis. This progress nurtures hopes that one day the classical
+   rendering pipeline can be replaced by efficient models that are learned directly from images.
+   However, current image synthesis models operate in the 2D domain where disentangling 3D properties
+   such as camera viewpoint or object pose is challenging. Furthermore, they lack an interpretable
+   and controllable representation. Our key hypothesis is that the image generation process should
+   be modeled in 3D space as the physical world surrounding us is intrinsically three-dimensional.
+   We define the new task of 3D controllable image synthesis and propose an approach for solving it
+   by reasoning both in 3D space and in the 2D image domain. We demonstrate that our model is able to
+   disentangle latent 3D factors of simple multi-object scenes in an unsupervised fashion from raw
+   images. Compared to pure 2D baselines, it allows for synthesizing scenes that are consistent wrt.
+   changes in viewpoint or object pose. We further evaluate various 3D representations in terms of
+   their usefulness for this challenging task.
+   },
+  pdf = {http://www.cvlibs.net/publications/Liao2020CVPR.pdf},
+  supp = {http://www.cvlibs.net/publications/Liao2020CVPR_supplementary.pdf},
+  code = {https://github.com/autonomousvision/controllable_image_synthesis},
+  blog = {https://autonomousvision.github.io/controllable-gan/},
+  poster = {http://www.cvlibs.net/publications/Liao2020CVPR_poster.pdf},
+  video = {https://www.youtube.com/watch?v=ygQCgGC0Lm8},
+  teaser = {controllableGAN.gif},
+  selected = True,
+}
+
+@inproceedings{Tosi2021CVPR,
+  title={SMD-Nets: Stereo Mixture Density Networks},
+  author={Tosi, Fabio and Liao, Yiyi and Schmitt, Carolin and Geiger, Andreas},
+  booktitle = CVPR,
+  year = {2021},
+  abstract = {Despite stereo matching accuracy has greatly improved by deep learning in the last few years, recovering sharp boundaries and high-resolution outputs efficiently remains challenging. In this paper, we propose Stereo Mixture Density Networks (SMD-Nets), a simple yet effective learning framework compatible with a wide class of 2D and 3D architectures which ameliorates both issues. Specifically, we exploit bimodal mixture densities as output representation and show that this allows for sharp and precise disparity estimates near discontinuities while explicitly modeling the aleatoric uncertainty inherent in the observations. Moreover, we formulate disparity estimation as a continuous problem in the image domain, allowing our model to query disparities at arbitrary spatial precision. We carry out comprehensive experiments on a new high-resolution and highly realistic synthetic stereo dataset, consisting of stereo pairs at 8Mpx resolution, as well as on real-world stereo datasets. Our experiments demonstrate increased depth accuracy near object boundaries and prediction of ultra high-resolution disparity maps on standard GPUs. We demonstrate the flexibility of our technique by improving the performance of a variety of stereo backbones.},
+  pdf = {http://www.cvlibs.net/publications/Tosi2021CVPR.pdf},
+  supp = {http://www.cvlibs.net/publications/Tosi2021CVPR_supplementary.pdf},
+  code = {https://github.com/fabiotosi92/SMD-Nets},
+  blog = {https://autonomousvision.github.io/smdnets/},
+  teaser = {cvpr2021.png},
+  selected = True,
 }
 
 @article{Liu2021TIP,
-  title={Learning steering kernels for guided depth completion},
-  author={Liu, Lina and Liao, Yiyi and Wang, Yue and Geiger, Andreas and Liu, Yong},
-  journal={IEEE Transactions on Image Processing},
+  title={Learning Steering Kernels for Guided Depth Completion},
+  author={Liu, Lina and Liao, Yiyi<sup>&#x0266F;</sup>, and Wang, Yue and Geiger, Andreas and Liu, Yong<sup>&#x0266F;</sup>},
+  journal=TIP,
   volume={30},
   pages={2850--2861},
   year={2021},
-  publisher={IEEE}
+  abstract={This paper addresses the guided depth completion
+        task in which the goal is to predict a dense depth map given a
+        guidance RGB image and sparse depth measurements. Recent
+        advances on this problem nurture hopes that one day we can
+        acquire accurate and dense depth at a very low cost. A major
+        challenge of guided depth completion is to effectively make use
+        of extremely sparse measurements, e.g., measurements covering
+        less than 1\% of the image pixels. In this paper, we propose
+        a fully differentiable model that avoids convolving on sparse
+        tensors by jointly learning depth interpolation and refinement.
+        More specifically, we propose a differentiable kernel regression
+        layer that interpolates the sparse depth measurements via learned
+        kernels. We further refine the interpolated depth map using
+        a residual depth refinement layer which leads to improved
+        performance compared to learning absolute depth prediction
+        using a vanilla network. We provide experimental evidence that
+        our differentiable kernel regression layer not only enables end-to-end training from very sparse measurements using standard
+        convolutional network architectures, but also leads to better
+        depth interpolation results compared to existing heuristically
+        motivated methods. We demonstrate that our method outperforms many state-of-the-art guided depth completion techniques
+        on both NYUv2 and KITTI. We further show the generalization
+        ability of our method with respect to the density and spatial
+        statistics of the sparse depth measurements.},
+  pdf = {http://www.cvlibs.net/publications/Liu2021TIP.pdf},
+  code = {https://github.com/LINA-lln/Steering-KernelNet},
+  teaser = {tip2021.png},
+  selected = True,
 }
 
-@article{Tosi2021CVPR,
-  title={SMD-Nets: Stereo Mixture Density Networks},
-  author={Tosi, Fabio and Liao, Yiyi and Schmitt, Carolin and Geiger, Andreas},
-  journal={IEEE Conf. on Computer Vision and Pattern Recognition (CVPR)},
-  year = {2021}
+@article{liao2017graph,
+  title={Graph Regularized Auto-encoders for Image Representation},
+  author={Liao, Yiyi and Wang, Yue and Liu, Yong},
+  journal=TIP,
+  volume={26},
+  number={6},
+  pages={2839--2852},
+  year={2017},
+  publisher={IEEE},
+  abstract={Image representation has been intensively explored in the domain of computer vision for its significant influence on the relative tasks such as image clustering and classification. It is valuable to learn a low-dimensional representation of an image which preserves its inherent information from the original image space. At the perspective of manifold learning, this is implemented with the local invariant idea to capture the intrinsic low-dimensional manifold embedded in the high-dimensional input space. Inspired by the recent successes of deep architectures, we propose a local invariant deep nonlinear mapping algorithm, called graph regularized auto-encoder (GAE). With the graph regularization, the proposed method preserves the local connectivity from the original image space to the representation space, while the stacked auto-encoders provide explicit encoding model for fast inference and powerful expressive capacity for complex modeling. Theoretical analysis shows that the graph regularizer penalizes the weighted Frobenius norm of the Jacobian matrix of the encoder mapping, where the weight matrix captures the local property in the input space. Furthermore, the underlying effects on the hidden representation space are revealed, providing insightful explanation to the advantage of the proposed method. Finally, the experimental results on both clustering and classification tasks demonstrate the effectiveness of our GAE as well as the correctness of the proposed theoretical analysis, and it also suggests that GAE is a superior solution to the current deep representation learning techniques comparing with variant auto-encoders and existing local invariant methods.
+},
+  pdf={https://ieeexplore.ieee.org/document/7556994},
+  teaser = {tip2017.png}
 }
+
+@article{liao2017place,
+  title={Place Classification with a Graph Regularized Deep Neural Network},
+  author={Liao, Yiyi and Kodagoda, Sarath and Wang, Yue and Shi, Lei and Liu, Yong},
+  journal={IEEE Trans. on Cognitive and Developmental Systems (TCDS)},
+  volume={9},
+  number={4},
+  pages={304--315},
+  year={2017},
+  abstract={Place classification is a fundamental ability that a robot should possess to carry out effective human-robot interactions. In recent years, there is a high exploitation of artificial intelligence algorithms in robotics applications. Inspired by the recent successes of deep learning methods, we propose an end-to-end learning approach for the place classification problem. With deep architectures, this methodology automatically discovers features and contributes in general to higher classification accuracies. The pipeline of our approach is composed of three parts. First, we construct multiple layers of laser range data to represent the environment information in different levels of granularity. Second, each layer of data are fed into a deep neural network for classification, where a graph regularization is imposed to the deep architecture for keeping local consistency between adjacent samples. Finally, the predicted labels obtained from all layers are fused based on confidence trees to maximize the overall confidence. Experimental results validate the effectiveness of our end-to-end place classification framework in which both the multilayer structure and the graph regularization promote the classification performance. Furthermore, results show that the features automatically learned from the raw input range data can achieve competitive results to the features constructed based on statistical and geometrical information.
+},
+  pdf = {https://ieeexplore.ieee.org/document/7501830},
+  teaser = {tcds2017.png},
+  selected = True,
+}
+
+@inproceedings{liao2017parse,
+  title={Parse Geometry from a Line: Monocular Depth Estimation with Partial Laser Observation},
+  author={Liao, Yiyi and Huang, Lichao and Wang, Yue and Kodagoda, Sarath and Yu, Yinan and Liu, Yong},
+  booktitle=ICRA,
+  year={2017},
+  abstract={Many standard robotic platforms are equipped with at least a fixed 2D laser range finder and a monocular camera. Although those platforms do not have sensors for 3D depth sensing capability, knowledge of depth is an essential part in many robotics activities. Therefore, recently, there is an increasing interest in depth estimation using monocular images. As this task is inherently ambiguous, the data-driven estimated depth might be unreliable in robotics applications. In this paper, we have attempted to improve the precision of monocular depth estimation by introducing 2D planar observation from the remaining laser range finder without extra cost. Specifically, we construct a dense reference map from the sparse laser range data, redefining the depth estimation task as estimating the distance between the real and the reference depth. To solve the problem, we construct a novel residual of residual neural network, and tightly combine the classification and regression losses for continuous depth estimation. Experimental results suggest that our method achieves considerable promotion compared to the state-of-the-art methods on both NYUD2 and KITTI, validating the effectiveness of our method on leveraging the additional sensory information. We further demonstrate the potential usage of our method in obstacle avoidance where our methodology provides comprehensive depth information compared to the solution using monocular camera or 2D laser range finder alone.},
+  pdf={https://arxiv.org/pdf/1611.02174.pdf},
+  teaser={icra2017.png},
+  selected={true},
+}
+
+@inproceedings{liao2016understand,
+  title={Understand Scene Categories by Objects: A Semantic Regularized Scene Classifier Using Convolutional Neural Networks},
+  author={Liao, Yiyi and Kodagoda, Sarath and Wang, Yue and Shi, Lei and Liu, Yong},
+  booktitle=ICRA,
+  pages={2318--2325},
+  year={2016},
+  abstract={Scene classification is a fundamental perception task for environmental understanding in today's robotics. In this paper, we have attempted to exploit the use of popular machine learning technique of deep learning to enhance scene understanding, particularly in robotics applications. As scene images have larger diversity than the iconic object images, it is more challenging for deep learning methods to automatically learn features from scene images with less samples. Inspired by human scene understanding based on object knowledge, we address the problem of scene classification by encouraging deep neural networks to incorporate object-level information. This is implemented with a regularization of semantic segmentation. With only 5 thousand training images, as opposed to 2.5 million images, we show the proposed deep architecture achieves superior scene classification results to the state-of-the-art on a publicly available SUN RGB-D dataset. In addition, performance of semantic segmentation, the regularizer, also reaches a new record with refinement derived from predicted scene labels. Finally, we apply our SUN RGB-D dataset trained model to a mobile robot captured images to classify scenes in our university demonstrating the generalization ability of the proposed algorithm.
+},
+  pdf={https://arxiv.org/pdf/1509.06470.pdf},
+  teaser={icra2016.png},
+}
+
