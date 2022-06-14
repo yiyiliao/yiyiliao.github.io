@@ -4,6 +4,7 @@
 @STRING{ICRA = {Proc. of the IEEE International Conf. on Robotics and Automation (ICRA)}}
 @STRING{THREEDV = {Proc. of the International Conf. on 3D Vision (3DV)}}
 @STRING{TIP = {IEEE Trans. on  Image Processing (TIP)}}
+@STRING{TPAMI = {IEEE Trans. on Pattern Analysis and Machine Intelligence (TPAMI)}}
 @STRING{NEURIPS = {Advances in Neural Information Processing Systems (NeurIPS)}}
 @STRING{ARXIV = {arXiv.org}}
 
@@ -54,14 +55,15 @@
   selected = True,
 }
 
-@ARTICLE{Liao2021ARXIV,
+@ARTICLE{Liao2022TPAMI,
   author = {Yiyi Liao and Jun Xie and Andreas Geiger},
   title = {KITTI-360: A Novel Dataset and Benchmarks for Urban Scene Understanding in 2D and 3D},
-  journal = {Arxiv},
-  year = {2021},
-  abstract = {For the last few decades, several major subfields of artificial intelligence including computer vision, graphics, and robotics have progressed largely independently from each other. Recently, however, the community has realized that progress towards robust intelligent systems such as self-driving cars requires a concerted effort across the different fields. This motivated us to develop KITTI-360, successor of the popular KITTI dataset. KITTI-360 is a suburban driving dataset which comprises richer input modalities, comprehensive semantic instance annotations and accurate localization to facilitate research at the intersection of vision, graphics and robotics. For efficient annotation, we created a tool to label 3D scenes with bounding primitives and developed a model that transfers this information into the 2D image domain, resulting in over 150k semantic and instance annotated images and 1B annotated 3D points. Moreover, we established benchmarks and baselines for several tasks relevant to mobile perception, encompassing problems from computer vision, graphics, and robotics on the same dataset. KITTI-360 will enable progress at the intersection of these research areas and thus contributing towards solving one of our grand challenges: the development of fully autonomous self-driving systems.},
-  pdf = {https://arxiv.org/abs/2109.13410},
+  journal = TPAMI,
+  year = {2022},
+  abstract = {For the last few decades, several major subfields of artificial intelligence including computer vision, graphics, and robotics have progressed largely independently from each other. Recently, however, the community has realized that progress towards robust intelligent systems such as self-driving cars requires a concerted effort across the different fields. This motivated us to develop KITTI-360, successor of the popular KITTI dataset. KITTI-360 is a suburban driving dataset which comprises richer input modalities, comprehensive semantic instance annotations and accurate localization to facilitate research at the intersection of vision, graphics and robotics. For efficient annotation, we created a tool to label 3D scenes with bounding primitives and developed a model that transfers this information into the 2D image domain, resulting in over  150k images and 1B 3D points with coherent semantic instance annotations across 2D and 3D. Moreover, we established benchmarks and baselines for several tasks relevant to mobile perception, encompassing problems from computer vision, graphics, and robotics on the same dataset, e.g., semantic scene understanding, novel view synthesis and semantic SLAM. KITTI-360 will enable progress at the intersection of these research areas and thus contribute towards solving one of today's grand challenges: the development of fully autonomous self-driving systems.},
+  pdf = {http://www.cvlibs.net/publications/Liao2022PAMI.pdf},
   code = {http://www.cvlibs.net/datasets/kitti-360/},
+  blog = {https://autonomousvision.github.io/kitti-360/},
   teaser = {kitti360.png},
 }
 

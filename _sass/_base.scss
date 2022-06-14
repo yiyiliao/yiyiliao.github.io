@@ -207,6 +207,26 @@ blockquote {
   color: var(--global-text-color);
 }
 
+.news .a{ 
+  .show-more {
+      color: #FF3636;
+      &:hover {
+        color: #FF3636;
+      }
+  }
+}
+.news a btn {
+          color: var(--global-theme-color);
+          padding-left: 1rem;
+          padding-right: 1rem;
+          padding-top: 0.25rem;
+          padding-bottom: 0.25rem;
+          &:hover {
+            color: var(--global-theme-color);
+            border-color: var(--global-theme-color);
+          }
+        }
+
 // Social (bottom)
 
 .social {
