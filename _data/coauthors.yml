@@ -1,3 +1,15 @@
+"Guo":
+  - firstname: ["Jiaxin"]
+    url: https://www.linkedin.com/in/jiaxin-guo-043a6b1b8
+
+"Xiong":
+  - firstname: ["Rong"]
+    url: http://www.cse.zju.edu.cn/english/redir.php?catalog_id=1113878&object_id=1115898
+
+"Zhong":
+  - firstname: ["Fangxun"]
+    url: https://billyzhonghk.wixsite.com/billyzhong 
+
 "Schwarz":
   - firstname: ["Katja", "Katja<sup>*</sup>", "K."]
     url: https://katjaschwarz.github.io/
@@ -67,6 +79,9 @@
     url: https://person.zju.edu.cn/en/yongliu
   - firstname: ["Lina"]
     url: https://april.zju.edu.cn/team/lina-liu/
+  - firstname: ["Yunhui"]
+    url: https://www.mrc-cuhk.com/people/prof-yun-hui-liu
+
 
 "Kodagoda":
   - firstname: ["Sarath", "S."] 
