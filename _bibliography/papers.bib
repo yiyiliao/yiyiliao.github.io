@@ -8,6 +8,16 @@
 @STRING{NEURIPS = {Advances in Neural Information Processing Systems (NeurIPS)}}
 @STRING{ARXIV = {arXiv.org}}
 
+@inproceedings{Fu2022THREEDV,
+  author = {Xiao<sup>*</sup> Fu and Shangzhan<sup>*</sup> Zhang and Tianrun Chen and Yichong Lu and Lanyun Zhu and Xiaowei Zhou and Andreas Geiger and Yiyi Liao},
+  title = {Panoptic NeRF: 3D-to-2D Label Transfer for Panoptic Urban Scene Segmentation},
+  booktitle = THREEDV,
+  year = {2022},
+  abstract = {Large-scale training data with high-quality annotations is critical for training semantic and instance segmentation models. Unfortunately, pixel-wise annotation is labor-intensive and costly, raising the demand for more efficient labeling strategies. In this work, we present a novel 3D-to-2D label transfer method, Panoptic NeRF, which aims for obtaining per-pixel 2D semantic and instance labels from easy-to-obtain coarse 3D bounding primitives. Our method utilizes NeRF as a differentiable tool to unify coarse 3D annotations and 2D semantic cues transferred from existing datasets. We demonstrate that this combination allows for improved geometry guided by semantic information, enabling rendering of accurate semantic maps across multiple views. Furthermore, this fusion process resolves label ambiguity of the coarse 3D annotations and filters noise in the 2D predictions. By inferring in 3D space and rendering to 2D labels, our 2D semantic and instance labels are multi-view consistent by design. Experimental results show that Panoptic NeRF outperforms existing label transfer methods in terms of accuracy and multi-view consistency on challenging urban scenes of the KITTI-360 dataset.},
+  teaser = {3dv2022.gif},
+  pdf = {https://arxiv.org/pdf/2203.15224.pdf},
+}
+
 @inproceedings{Guo2022ECCV,
   author = {Jiaxin Guo and Fangxun Zhong and Rong Xiong and Yunhui Liu and Yue Wang and Yiyi Liao},
   title = {A Visual Navigation Perspective for Category-Level Object Pose Estimation},
