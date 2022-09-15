@@ -8,6 +8,19 @@
 @STRING{NEURIPS = {Advances in Neural Information Processing Systems (NeurIPS)}}
 @STRING{ARXIV = {arXiv.org}}
 
+@inproceedings{Schwarz2020NEURIPS,
+  title = {VoxGRAF: Fast 3D-Aware Image Synthesis with Sparse Voxel Grids},
+  author = {Schwarz, Katja and Sauer, Axel and Niemeyer, Michael and Liao, Yiyi and Geiger, Andreas},
+  booktitle = NEURIPS,
+  year = {2022},
+  abstract = {State-of-the-art 3D-aware generative models rely on coordinate-based MLPs to parameterize 3D radiance fields. While demonstrating impressive results, querying an MLP for every sample along each ray leads to slow rendering. Therefore, existing approaches often render low-resolution feature maps and process them with an upsampling network to obtain the final image. Albeit efficient, neural rendering often entangles viewpoint and content such that changing the camera pose results in unwanted changes of geometry or appearance. Motivated by recent results in voxel-based novel view synthesis, we investigate the utility of sparse voxel grid representations for fast and 3D-consistent generative modeling in this paper. Our results demonstrate that monolithic MLPs can indeed be replaced by 3D convolutions when combining sparse voxel grids with progressive growing, free space pruning and appropriate regularization. To obtain a compact representation of the scene and allow for scaling to higher voxel resolutions, our model disentangles the foreground object (modeled in 3D) from the background (modeled in 2D). In contrast to existing approaches, our method requires only a single forward pass to generate a full 3D scene. It hence allows for efficient rendering from arbitrary viewpoints while yielding 3D consistent results with high visual fidelity.
+},
+  pdf = {https://arxiv.org/pdf/2206.07695.pdf},
+  project = {https://katjaschwarz.github.io/voxgraf/},
+  teaser = {voxgraf.gif},
+  selected = True,
+}
+
 @inproceedings{Fu2022THREEDV,
   author = {Xiao<sup>*</sup> Fu and Shangzhan<sup>*</sup> Zhang and Tianrun Chen and Yichong Lu and Lanyun Zhu and Xiaowei Zhou and Andreas Geiger and Yiyi Liao},
   title = {Panoptic NeRF: 3D-to-2D Label Transfer for Panoptic Urban Scene Segmentation},
@@ -15,7 +28,10 @@
   year = {2022},
   abstract = {Large-scale training data with high-quality annotations is critical for training semantic and instance segmentation models. Unfortunately, pixel-wise annotation is labor-intensive and costly, raising the demand for more efficient labeling strategies. In this work, we present a novel 3D-to-2D label transfer method, Panoptic NeRF, which aims for obtaining per-pixel 2D semantic and instance labels from easy-to-obtain coarse 3D bounding primitives. Our method utilizes NeRF as a differentiable tool to unify coarse 3D annotations and 2D semantic cues transferred from existing datasets. We demonstrate that this combination allows for improved geometry guided by semantic information, enabling rendering of accurate semantic maps across multiple views. Furthermore, this fusion process resolves label ambiguity of the coarse 3D annotations and filters noise in the 2D predictions. By inferring in 3D space and rendering to 2D labels, our 2D semantic and instance labels are multi-view consistent by design. Experimental results show that Panoptic NeRF outperforms existing label transfer methods in terms of accuracy and multi-view consistency on challenging urban scenes of the KITTI-360 dataset.},
   teaser = {3dv2022.gif},
-  pdf = {https://arxiv.org/pdf/2203.15224.pdf},
+  pdf = {https://www.cvlibs.net/publications/Fu2022THREEDV.pdf},
+  poster = {https://www.cvlibs.net/publications/Fu2022THREEDV_poster.pdf},
+  video = {https://www.youtube.com/watch?v=5QKTeFLciWo},
+  selected = True,
 }
 
 @inproceedings{Guo2022ECCV,
@@ -37,7 +53,7 @@
   pdf = {http://www.cvlibs.net/publications/Peng2021NEURIPS.pdf},
   supp = {http://www.cvlibs.net/publications/Peng2021NEURIPS_supplementary.pdf},
   code = {https://github.com/autonomousvision/shape_as_points},
-  teaser_video = {sap_teaser.mp4},
+  teaser = {sap.gif},
   selected = True,
 }
 
