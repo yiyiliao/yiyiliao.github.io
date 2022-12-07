@@ -16,7 +16,7 @@
   abstract = {State-of-the-art 3D-aware generative models rely on coordinate-based MLPs to parameterize 3D radiance fields. While demonstrating impressive results, querying an MLP for every sample along each ray leads to slow rendering. Therefore, existing approaches often render low-resolution feature maps and process them with an upsampling network to obtain the final image. Albeit efficient, neural rendering often entangles viewpoint and content such that changing the camera pose results in unwanted changes of geometry or appearance. Motivated by recent results in voxel-based novel view synthesis, we investigate the utility of sparse voxel grid representations for fast and 3D-consistent generative modeling in this paper. Our results demonstrate that monolithic MLPs can indeed be replaced by 3D convolutions when combining sparse voxel grids with progressive growing, free space pruning and appropriate regularization. To obtain a compact representation of the scene and allow for scaling to higher voxel resolutions, our model disentangles the foreground object (modeled in 3D) from the background (modeled in 2D). In contrast to existing approaches, our method requires only a single forward pass to generate a full 3D scene. It hence allows for efficient rendering from arbitrary viewpoints while yielding 3D consistent results with high visual fidelity.
 },
   pdf = {https://arxiv.org/pdf/2206.07695.pdf},
-  project = {https://katjaschwarz.github.io/voxgraf/},
+  website = {https://katjaschwarz.github.io/voxgraf},
   teaser = {voxgraf.gif},
   selected = True,
 }
@@ -30,6 +30,8 @@
   teaser = {3dv2022.gif},
   pdf = {https://www.cvlibs.net/publications/Fu2022THREEDV.pdf},
   poster = {https://www.cvlibs.net/publications/Fu2022THREEDV_poster.pdf},
+  website = {https://fuxiao0719.github.io/projects/panopticnerf},
+  code = {https://github.com/fuxiao0719/PanopticNeRF},
   video = {https://www.youtube.com/watch?v=5QKTeFLciWo},
   selected = True,
 }
@@ -42,6 +44,8 @@
   abstract = {This paper studies category-level object pose estimation based on a single monocular image. Recent advances in pose-aware generative models have paved the way for addressing this challenging task using analysis-by-synthesis. The idea is to sequentially update a set of latent variables, \eg, pose, shape, and appearance, of the generative model until the generated image best agrees with the observation. However, convergence and efficiency are two challenges of this inference procedure. In this paper, we take a deeper look at the inference of analysis-by-synthesis from the perspective of visual navigation, and investigate what is a good navigation policy for this specific task. We evaluate three different strategies, including gradient descent, reinforcement learning and imitation learning, via thorough comparisons in terms of convergence, robustness and efficiency. Moreover, we show that a simple hybrid approach leads to an effective and efficient solution. We further compare these strategies to state-of-the-art methods, and demonstrate superior performance on synthetic and real-world datasets leveraging off-the-shelf pose-aware generative models.},
   teaser = {eccv2022.jpg},
   pdf = {https://arxiv.org/pdf/2203.13572.pdf},
+  code = {https://github.com/wrld/visual_navigation_pose_estimation},
+  video = {https://youtu.be/bIsP7Necw0Q}
 }
 
 @inproceedings{Peng2021NEURIPS,
@@ -116,7 +120,6 @@
   blog = {https://autonomousvision.github.io/kilonerf/},
   teaser = {iccv2021.png},
   selected = True,
-
 }
 
 @inproceedings{Riegler2019CVPR,
