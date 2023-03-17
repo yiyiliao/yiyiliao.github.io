@@ -1,103 +1,47 @@
-"Sauer":
-  - firstname: ["Axel"]
-    url: https://axelsauer.com/
-
-"Fu":
-  - firstname: ["Xiao", "Xiao<sup>*</sup>"]
-    url: https://fuxiao0719.github.io/
-
-"Zhu":
-  - firstname: ["Lanyun"]
-    url: https://lanyunzhu.site/
-
-"Zhou":
-  - firstname: ["Xiaowei"]
-    url: https://xzhou.me/
-
-"Guo":
-  - firstname: ["Jiaxin"]
-    url: https://www.linkedin.com/in/jiaxin-guo-043a6b1b8
-
-"Xiong":
-  - firstname: ["Rong"]
-    url: http://www.cse.zju.edu.cn/english/redir.php?catalog_id=1113878&object_id=1115898
-
-"Zhong":
-  - firstname: ["Fangxun"]
-    url: https://billyzhonghk.wixsite.com/billyzhong 
-
-"Schwarz":
-  - firstname: ["Katja", "Katja<sup>*</sup>", "K."]
-    url: https://katjaschwarz.github.io/
-
-"Geiger":
-  - firstname: ["Andreas", "A."]
-    url: http://www.cvlibs.net/
-
-"Niemeyer":
-  - firstname: ["Michael", "M."]
-    url: https://m-niemeyer.github.io/
-
-"Mescheder":
-  - firstname: ["Lars", "L."]
-    url: https://avg.is.tuebingen.mpg.de/person/lmescheder
-
-"Peng":
-  - firstname: ["Songyou", "S."]
-    url: https://pengsongyou.github.io/ 
-
-"Reiser":
-  - firstname: ["Christian", "C."]
-    url: https://avg.is.tuebingen.mpg.de/person/creiser
-
-"Wang":
-  - firstname: ["Yue", "Y."]
-    url: https://ywang-zju.github.io/ 
-
-"Tosi":
-  - firstname: ["Fabio"]
-    url: http://vision.disi.unibo.it/~ftosi/
-
-"Schmitt":
-  - firstname: ["Carolin", "C."]
-    url: https://avg.is.tuebingen.mpg.de/person/cschmitt 
-
 "Black":
   - firstname: ["Michael", "M."]
     url: https://ps.is.tuebingen.mpg.de/person/black 
 
-"Riegler":
-  - firstname: ["Gernot", "G.", "Gernot<sup>*</sup>"]
-    url: https://griegler.github.io/ 
+"Chen":
+  - firstname: ["Qifeng"]
+    url: https://cqf.io/
+  - firstname: ["Tianrun"]
+    url: https://tianrun-chen.github.io/
 
 "Donné":
   - firstname: ["Simon", "S."]
     url: https://donnessime.github.io/ 
 
-"Pollefeys":
-  - firstname: ["Marc", "M."]
-    url: https://people.inf.ethz.ch/pomarc/ 
+"Fu":
+  - firstname: ["Xiao", "Xiao<sup>*</sup>"]
+    url: https://fuxiao0719.github.io/
 
-"Jiang":
-  - firstname: ["Chiyu Max", "Chiyu<sup>&#x0266F;</sup>", "Chiyu", "C. M."] 
-    url: https://www.maxjiang.ml/
-
-"Sevilla-Lara":
-  - firstname: ["Laura", "L."]
-    url: https://people.cs.umass.edu/~lsevilla/ 
+"Geiger":
+  - firstname: ["Andreas", "A."]
+    url: http://www.cvlibs.net/
 
 "Guney":
   - firstname: ["Fatma", "F."]
     url: https://ps.is.tuebingen.mpg.de/person/fguney
 
-"Liu":
-  - firstname: ["Yong", "Yong<sup>&#x0266F;</sup>"]
-    url: https://person.zju.edu.cn/en/yongliu
-  - firstname: ["Lina"]
-    url: https://april.zju.edu.cn/team/lina-liu/
-  - firstname: ["Yunhui"]
-    url: https://www.mrc-cuhk.com/people/prof-yun-hui-liu
 
+"Guo":
+  - firstname: ["Jiaxin"]
+    url: https://www.linkedin.com/in/jiaxin-guo-043a6b1b8
+  - firstname: ["Sheng"]
+    url: https://scholar.google.com.hk/citations?user=mbpgOmEAAAAJ
+
+"Huang":
+  - firstname: ["Lichao"]
+    url: https://scholar.google.com/citations?user=F2e_jZMAAAAJ
+
+"Jampani":
+  - firstname: ["Varun", "V."]
+    url: https://varunjampani.github.io/
+
+"Jiang":
+  - firstname: ["Chiyu Max", "Chiyu<sup>&#x0266F;</sup>", "Chiyu", "C. M."] 
+    url: https://www.maxjiang.ml/
 
 "Kodagoda":
   - firstname: ["Sarath", "S."] 
@@ -107,22 +51,118 @@
   - firstname: ["Vladlen", "V."]
     url: http://vladlen.info/
 
-"Jampani":
-  - firstname: ["Varun", "V."]
-    url: https://varunjampani.github.io/
+"Liu":
+  - firstname: ["Yong", "Yong<sup>&#x0266F;</sup>"]
+    url: https://person.zju.edu.cn/en/yongliu
+  - firstname: ["Lina"]
+    url: https://april.zju.edu.cn/team/lina-liu/
+  - firstname: ["Yunhui"]
+    url: https://www.mrc-cuhk.com/people/prof-yun-hui-liu
+
+"Lin":
+  - firstname: ["Haotong"]
+    url: https://haotongl.github.io/
+
+"Mescheder":
+  - firstname: ["Lars", "L."]
+    url: https://avg.is.tuebingen.mpg.de/person/lmescheder
+
+"Mou":
+  - firstname: ["Linzhan"]
+    url: https://friedrich-m.github.io/
+
+"Niemeyer":
+  - firstname: ["Michael", "M."]
+    url: https://m-niemeyer.github.io/
+
+"Peng":
+  - firstname: ["Songyou"]
+    url: https://pengsongyou.github.io/ 
+  - firstname: ["Sida"]
+    url: https://pengsida.net/
+
+"Pollefeys":
+  - firstname: ["Marc", "M."]
+    url: https://people.inf.ethz.ch/pomarc/ 
+
+"Reiser":
+  - firstname: ["Christian"]
+    url: https://avg.is.tuebingen.mpg.de/person/creiser
+
+"Riegler":
+  - firstname: ["Gernot", "Gernot<sup>*</sup>"]
+    url: https://griegler.github.io/ 
+
+"Schmitt":
+  - firstname: ["Carolin", "C."]
+    url: https://avg.is.tuebingen.mpg.de/person/cschmitt 
+
+"Sauer":
+  - firstname: ["Axel"]
+    url: https://axelsauer.com/
+
+"Schwarz":
+  - firstname: ["Katja", "Katja<sup>*</sup>", "K."]
+    url: https://katjaschwarz.github.io/
+
+"Sevilla-Lara":
+  - firstname: ["Laura", "L."]
+    url: https://people.cs.umass.edu/~lsevilla/ 
 
 "Shi":
   - firstname: ["Lei", "L."]
     url: https://au.linkedin.com/in/lei-shi-342b152b
+  - firstname: ["Zifan"]
+    url: https://vivianszf.github.io/
 
-"Huang":
-  - firstname: ["Lichao", "L."]
-    url: https://scholar.google.com/citations?user=F2e_jZMAAAAJ
+"Shen":
+  - firstname: ["Yujun"]
+    url: https://shenyujun.github.io/
 
-"Yu":
-  - firstname: ["Yinan", "Y."]
-    url: http://www.cbsr.ia.ac.cn/users/ynyu/
+"Tosi":
+  - firstname: ["Fabio"]
+    url: http://vision.disi.unibo.it/~ftosi/
+
+"Wang":
+  - firstname: ["Yue", "Y."]
+    url: https://ywang-zju.github.io/ 
 
 "Xie":
   - firstname: ["Jun", "J."]
     url: http://www.cbsr.ia.ac.cn/users/ynyu/
+
+"Xiong":
+  - firstname: ["Rong"]
+    url: http://www.cse.zju.edu.cn/english/redir.php?catalog_id=1113878&object_id=1115898
+
+"Xu":
+  - firstname: ["Yinghao"]
+    url: https://justimyhxu.github.io/
+
+"Yeung":
+  - firstname: ["Dit-Yan"]
+    url: https://sites.google.com/view/dyyeung
+
+"Yu":
+  - firstname: ["Yinan"]
+    url: http://www.cbsr.ia.ac.cn/users/ynyu/
+  - firstname: ["Lu", "Lu<sup>&#x0266F;</sup>"]
+    url: https://person.zju.edu.cn/en/yul
+  - firstname: ["Kaicheng"]
+    url: https://scholar.google.com/citations?user=Jtmq_m0AAAAJ
+
+"Zhang":
+  - firstname: ["Shangzhan"]
+    url: https://zhanghe3z.github.io/
+
+"Zhong":
+  - firstname: ["Fangxun"]
+    url: https://billyzhonghk.wixsite.com/billyzhong 
+
+"Zhou":
+  - firstname: ["Xiaowei"]
+    url: https://xzhou.me/
+
+"Zhu":
+  - firstname: ["Lanyun"]
+    url: https://lanyunzhu.site/
