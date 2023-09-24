@@ -51,6 +51,10 @@
   - firstname: ["Vladlen", "V."]
     url: http://vladlen.info/
 
+"Li":
+  - firstname: ["Zizhang"]
+    url: https://kyleleey.github.io/
+
 "Liu":
   - firstname: ["Yong", "Yong<sup>&#x0266F;</sup>"]
     url: https://person.zju.edu.cn/en/yongliu
@@ -126,6 +130,8 @@
 "Wang":
   - firstname: ["Yue", "Y."]
     url: https://ywang-zju.github.io/ 
+  - firstname: ["Mengmeng"]
+    url: https://sallymmx.github.io/
 
 "Xie":
   - firstname: ["Jun", "J."]

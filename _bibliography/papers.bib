@@ -8,6 +8,42 @@
 @STRING{NEURIPS = {Advances in Neural Information Processing Systems (NeurIPS)}}
 @STRING{ARXIV = {arXiv.org}}
 
+@inproceedings{Yang2023ICCV,
+  title = {UrbanGIRAFFE: Representing Urban Scenes as Compositional Generative Neural Feature Fields},
+  author = {Yang, Yuanbo and Yang, Yifei and Guo, Hanlei and Xiong, Rong and Wang, Yue and Liao, Yiyi<sup>&#x0266F;</sup>},
+  booktitle = ICCV,
+  year = {2023},
+  abstract = {Generating photorealistic images with controllable camera pose and scene contents is essential for many applications including AR/VR and simulation. Despite the fact that rapid progress has been made in 3D-aware generative models, most existing methods focus on object-centric images and are not applicable to generating urban scenes for free camera viewpoint control and scene editing. To address this challenging task, we propose UrbanGIRAFFE, which uses a coarse 3D panoptic prior, including the layout distribution of uncountable stuff and countable objects, to guide a 3D-aware generative model. Our model is compositional and controllable as it breaks down the scene into stuff, objects, and sky. Using stuff prior in the form of semantic voxel grids, we build a conditioned stuff generator that effectively incorporates the coarse semantic and geometry information. The object layout prior further allows us to learn an object generator from cluttered scenes. With proper loss functions, our approach facilitates photorealistic 3D-aware image synthesis with diverse controllability, including large camera movement, stuff editing, and object manipulation. We validate the effectiveness of our model on both synthetic and real-world datasets, including the challenging KITTI-360 dataset.},
+  pdf = {https://arxiv.org/pdf/2303.14167.pdf},
+  teaser = {Yang2023ICCV.gif},
+  website = {https://lv3d.github.io/urbanGIRAFFE/},
+  selected = True,
+}
+
+@inproceedings{Chen2023ICCV,
+  title = {VeRi3D: Generative Vertex-based Radiance Fields for 3D Controllable Human Image Synthesis},
+  author = {Chen, Xinya and Huang, Jiaxin and Bin, Yanrui and Yu, Lu and Liao, Yiyi<sup>&#x0266F;</sup>},
+  booktitle = ICCV,
+  year = {2023},
+  abstract = {Unsupervised learning of 3D-aware generative adversarial networks has lately made much progress. Some recent work demonstrates promising results of learning human generative models using neural articulated radiance fields, yet their generalization ability and controllability lag behind parametric human models, i.e., they do not perform well when generalizing to novel pose/shape and are not part controllable. To solve these problems, we propose VeRi3D, a generative human vertex-based radiance field parameterized by vertices of the parametric human template, SMPL. We map each 3D point to the local coordinate system defined on its neighboring vertices, and use the corresponding vertex feature and local coordinates for mapping it to color and density values. We demonstrate that our simple approach allows for generating photorealistic human images with free control over camera pose, human pose, shape, as well as enabling part-level editing.},
+  pdf = {https://arxiv.org/pdf/2303.14167.pdf},
+  teaser = {Chen2023ICCV.jpg},
+  website = {https://xdimlab.github.io/VeRi3d/},
+  selected = True,
+}
+
+@inproceedings{Li2023ICCV,
+  title = {RICO: Regularizing the Unobservable for Indoor Compositional Reconstruction},
+  author = {Li, Zizhang and Lyu, Xiaoyang and Ding, Yuanyuan and Wang, Mengmeng and Liao, Yiyi<sup>&#x0266F;</sup> and Liu, Yong<sup>&#x0266F;</sup>},
+  booktitle = ICCV,
+  year = {2023},
+  abstract = {Recently, neural implicit surfaces have become popular for multi-view reconstruction. To facilitate practical applications like scene editing and manipulation, some works extend the framework with semantic masks input for the object-compositional reconstruction rather than the holistic perspective. Though achieving plausible disentanglement, the performance drops significantly when processing the indoor scenes where objects are usually partially observed. We propose RICO to address this by regularizing the unobservable regions for indoor compositional reconstruction. Our key idea is to first regularize the smoothness of the occluded background, which then in turn guides the foreground object reconstruction in unobservable regions based on the object-background relationship. Particularly, we regularize the geometry smoothness of occluded background patches. With the improved background surface, the signed distance function and the reversedly rendered depth of objects can be optimized to bound them within the background range. Extensive experiments show our method outperforms other methods on synthetic and real-world indoor scenes and prove the effectiveness of proposed regularizations.},
+  pdf = {https://arxiv.org/pdf/2303.08605.pdf},
+  teaser = {Li2023ICCV.jpg},
+  selected = True,
+}
+
+
 @inproceedings{Li2023CVPR,
   title = {SteerNeRF: Accelerating NeRF Rendering via Smooth Viewpoint Trajectory},
   author = {Li, Sicheng and Li, Hao and Wang, Yue and Liao, Yiyi<sup>&#x0266F;</sup> and Yu, Lu<sup>&#x0266F;</sup>},
@@ -16,6 +52,8 @@
   abstract = {Neural Radiance Fields (NeRF) have demonstrated superior novel view synthesis performance but are slow at rendering. To speed up the volume rendering process, many acceleration methods have been proposed at the cost of large memory consumption. To push the frontier of the efficiency-memory trade-off, we explore a new perspective to accelerate NeRF rendering, leveraging a key fact that the viewpoint change is usually smooth and continuous in interactive viewpoint control. This allows us to leverage the information of preceding viewpoints to reduce the number of rendered pixels as well as the number of sampled points along the ray of the remaining pixels. In our pipeline, a low-resolution feature map is rendered first by volume rendering, then a lightweight 2D neural renderer is applied to generate the output image at target resolution leveraging the features of preceding and current frames. We show that the proposed method can achieve competitive rendering quality while reducing the rendering time with little memory overhead, enabling 30FPS at 1080P image resolution with a low memory footprint.},
   pdf = {https://arxiv.org/pdf/2212.08476.pdf},
   teaser = {Li2023CVPR.jpeg},
+  code = {https://github.com/JasonLSC/SteerNeRF_official},
+  website = {https://jasonlsc.github.io/SteerNeRF/},
   selected = True,
 }
 
