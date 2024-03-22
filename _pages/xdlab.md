@@ -6,7 +6,7 @@ title_long: X-Dimensional Representations Lab
 description: Welcome to our lab!
 nav: true
 nav_order: 6
-logo: assets/logo/xdlab_logo.png
+logo: assets/logo/xdlab_logo.jpg
 ---
 
 Welcome to our X-D Lab! We are interested in exploring effective and efficient 2D, 3D and 4D representations for various applications in autonomous driving, robotics and immersive media. 
