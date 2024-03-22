@@ -24,21 +24,11 @@ Hao Li \\
 Hanlei Guo \\
 Jiaxin Huang
 
-### Bachelor Students
-Xianxu Xiang \\
-Jiahao Shao \\
-Chengzhen Wu
-
 ### Research Interns
 Lu Xu \\
+Yuanbo Yang \\
 Shukai Zhang 
 
-
-<details>
-  <summary>Former Students</summary><p>
-
-  Xiao Fu (now PhD student at CUHK)<br>
-  Xinya Chen <br>
-  Yuanbo Yang 
-
-</p></details>
+### Former Students
+[Xiao Fu](https://fuxiao0719.github.io/) (now PhD student at CUHK)\\
+[Xinya Chen](https://xinyachen21.github.io/)
