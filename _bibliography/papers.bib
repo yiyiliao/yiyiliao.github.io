@@ -3,10 +3,57 @@
 @STRING{ICCV = {Proc. of the IEEE International Conf. on Computer Vision (ICCV)}}
 @STRING{ICRA = {Proc. of the IEEE International Conf. on Robotics and Automation (ICRA)}}
 @STRING{THREEDV = {Proc. of the International Conf. on 3D Vision (3DV)}}
+@STRING{RAL = {IEEE Robotics and Automation Letters (RA-L)}}
 @STRING{TIP = {IEEE Trans. on  Image Processing (TIP)}}
 @STRING{TPAMI = {IEEE Trans. on Pattern Analysis and Machine Intelligence (TPAMI)}}
 @STRING{NEURIPS = {Advances in Neural Information Processing Systems (NeurIPS)}}
 @STRING{ARXIV = {arXiv.org}}
+
+@inproceedings{Zhou2024CVPR,
+  title = {HUGS: Holistic Urban 3D Scene Understanding via Gaussian Splatting},
+  author = {Zhou, Hongyu and Shao, Jiahao and Xu, Lu and Dongfeng, Bai and Qiu, Weichao and Liu, Bingbing and Wang, Yue and Geiger, Andreas and Liao, Yiyi<sup>&#x0266F;</sup>},
+  booktitle = CVPR,
+  year = {2024},
+  abstract = {Holistic understanding of urban scenes based on RGB images is a challenging yet important problem. It encompasses understanding both the geometry and appearance to enable novel view synthesis, parsing semantic labels, and tracking moving objects. Despite considerable progress, existing approaches often focus on specific aspects of this task and require additional inputs such as LiDAR scans or manually annotated 3D bounding boxes. In this paper, we introduce a novel pipeline that utilizes 3D Gaussian Splatting for holistic urban scene understanding. Our main idea involves the joint optimization of geometry, appearance, semantics, and motion using a combination of static and dynamic 3D Gaussians, where moving object poses are regularized via physical constraints. Our approach offers the ability to render new viewpoints in real-time, yielding 2D and 3D semantic information with high accuracy, and reconstruct dynamic scenes, even in scenarios where 3D bounding box detection are highly noisy. Experimental results on KITTI, KITTI-360, and Virtual KITTI 2 demonstrate the effectiveness of our approach.},
+  pdf = {https://arxiv.org/pdf/2403.12722.pdf},
+  teaser = {Zhou2024CVPR.gif},
+  website = {https://xdimlab.github.io/hugs_website/},
+  selected = True,
+}
+
+@inproceedings{Li2024CVPR,
+  title = {NeRFCodec: Neural Feature Compression Meets Neural Radiance Fields for Memory-Efficient Scene Representation},
+  author = {Li, Sicheng and Li, Hao and Liao, Yiyi<sup>&#x0266F;</sup> and Yu, Lu<sup>&#x0266F;</sup>},
+  booktitle = CVPR,
+  year = {2024},
+  abstract = {The emergence of Neural Radiance Fields (NeRF) has greatly impacted 3D scene modeling and novel-view synthesis. As a kind of visual media for 3D scene representation, compression with high rate-distortion performance is an eternal target. Motivated by advances in neural compression and neural field representation, we propose NeRFCodec, an end-to-end NeRF compression framework that integrates non-linear transform, quantization, and entropy coding for memory-efficient scene representation. Since training a non-linear transform directly on a large scale of NeRF feature planes is impractical, we discover that pre-trained neural 2D image codec can be utilized for compressing the features when adding content-specific parameters. Specifically, we reuse neural 2D image codec but modify its encoder and decoder heads, while keeping the other parts of the pre-trained decoder frozen. This allows us to train the full pipeline via supervision of rendering loss and entropy loss, yielding the rate-distortion balance by updating the content-specific parameters. At test time, the bitstreams containing latent code, feature decoder head, and other side information are transmitted for communication. Experimental results demonstrate our method outperforms existing NeRF compression methods, enabling high-quality novel view synthesis with a memory budget of 0.5 MB.},
+  teaser = {Li2024CVPR.jpg},
+  selected = True,
+}
+
+@inproceedings{Mao2024ICRA,
+  title = {NGEL-SLAM: Neural Implicit Representation-based Global Consistent Low-Latency SLAM System},
+  author = {Mao, Yunxuan and Yu, Xuan and Wang, Kai and Wang, Yue and Xiong, Rong and Liao, Yiyi<sup>&#x0266F;</sup>},
+  booktitle = ICRA,
+  year = {2024},
+  abstract = {Neural implicit representations have emerged as a promising solution for providing dense geometry in Simultaneous Localization and Mapping (SLAM). However, existing methods in this direction fall short in terms of global consistency and low latency. This paper presents NGEL-SLAM to tackle the above challenges. To ensure global consistency, our system leverages a traditional feature-based tracking module that incorporates loop closure. Additionally, we maintain a global consistent map by representing the scene using multiple neural implicit fields, enabling quick adjustment to the loop closure.  Moreover, our system allows for fast convergence through the use of octree-based implicit representations. The combination of rapid response to loop closure and fast convergence makes our system a truly low-latency system that achieves global consistency. Our system enables rendering high-fidelity RGBD images, along with extracting dense and complete surfaces.  Experiments on both synthetic and real-world datasets suggest that our system achieves state-of-the-art tracking and mapping accuracy while maintaining low latency.},
+  teaser = {Mao2024ICRA.jpg},
+  selected = True,
+  pdf = {https://arxiv.org/pdf/2311.09525.pdf}
+}
+
+
+@inproceedings{Yu2023RAL,
+  title = {NF-Atlas: Multi-Volume Neural Feature Fields for Large Scale LiDAR Mapping},
+  author = {Yu, Xuan and Liu, Yili and Mao, Sitong and Zhou, Shunbo and Xiong, Rong and Liao, Yiyi and Wang, Yue},
+  booktitle = RAL,
+  year = {2023},
+  abstract={ LiDAR Mapping has been a long-standing problem in robotics. Recent progress in neural implicit representation has brought new opportunities to robotic mapping. In this paper, we propose the multi-volume neural feature fields, called NF-Atlas, which bridge the neural feature volumes with pose graph optimization. By regarding the neural feature volume as pose graph nodes and the relative pose between volumes as pose graph edges, the entire neural feature field becomes both locally rigid and globally elastic. Locally, the neural feature volume employs a sparse feature Octree and a small MLP to encode the signed distance function (SDF) of the submap with an option of semantics. Learning the map using this structure allows for end-to-end solving of maximum a posteriori (MAP) based probabilistic mapping. Globally, the map is built volume by volume independently, avoiding catastrophic forgetting when mapping incrementally. Furthermore, when a loop closure occurs, with the elastic pose graph based representation, only updating the origin of neural volumes is required without remapping. Finally, these functionalities of NF-Atlas are validated. Thanks to the sparsity and the optimization based formulation, NF-Atlas shows competitive performance in terms of accuracy, efficiency and memory usage on both simulation and real-world datasets.  },
+  teaser = {Yu2023RAL.jpg},
+  selected = True,
+  pdf = {https://arxiv.org/pdf/2304.04624.pdf},
+  website = {https://yuxuan1206.github.io/NFAtlas/}
+}
 
 @inproceedings{Yang2023ICCV,
   title = {UrbanGIRAFFE: Representing Urban Scenes as Compositional Generative Neural Feature Fields},
@@ -51,7 +98,7 @@
   year = {2023},
   abstract = {Neural Radiance Fields (NeRF) have demonstrated superior novel view synthesis performance but are slow at rendering. To speed up the volume rendering process, many acceleration methods have been proposed at the cost of large memory consumption. To push the frontier of the efficiency-memory trade-off, we explore a new perspective to accelerate NeRF rendering, leveraging a key fact that the viewpoint change is usually smooth and continuous in interactive viewpoint control. This allows us to leverage the information of preceding viewpoints to reduce the number of rendered pixels as well as the number of sampled points along the ray of the remaining pixels. In our pipeline, a low-resolution feature map is rendered first by volume rendering, then a lightweight 2D neural renderer is applied to generate the output image at target resolution leveraging the features of preceding and current frames. We show that the proposed method can achieve competitive rendering quality while reducing the rendering time with little memory overhead, enabling 30FPS at 1080P image resolution with a low memory footprint.},
   pdf = {https://arxiv.org/pdf/2212.08476.pdf},
-  teaser = {Li2023CVPR.jpeg},
+  teaser = {Li2023CVPR.jpg},
   code = {https://github.com/JasonLSC/SteerNeRF_official},
   website = {https://jasonlsc.github.io/SteerNeRF/},
   selected = True,
@@ -178,7 +225,7 @@
   pdf = {http://www.cvlibs.net/publications/Liao2022PAMI.pdf},
   code = {http://www.cvlibs.net/datasets/kitti-360/},
   blog = {https://autonomousvision.github.io/kitti-360/},
-  teaser = {kitti360.png},
+  teaser = {kitti360.jpg},
 }
 
 
@@ -192,7 +239,7 @@
   supp = {http://www.cvlibs.net/publications/Reiser2021ICCV_supplementary.pdf},
   code = {https://creiser.github.io/kilonerf/},
   blog = {https://autonomousvision.github.io/kilonerf/},
-  teaser = {iccv2021.png},
+  teaser = {iccv2021.jpg},
   selected = True,
 }
 
@@ -206,7 +253,7 @@
   supp = {http://www.cvlibs.net/publications/Riegler2019CVPR_supplementary.pdf},
   poster = {http://www.cvlibs.net/publications/Riegler2019CVPR_poster.pdf},
   code = {https://github.com/autonomousvision/connecting_the_dots},
-  teaser = {cvpr2019.png},
+  teaser = {cvpr2019.jpg},
 }
 
 @inproceedings{liao2018cvpr,
@@ -217,7 +264,7 @@
   abstract = {Existing learning based solutions to 3D surface prediction cannot be trained end-to-end as they operate on intermediate representations (eg, TSDF) from which 3D surface meshes must be extracted in a post-processing step (eg, via the marching cubes algorithm). In this paper, we investigate the problem of end-to-end 3D surface prediction. We first demonstrate that the marching cubes algorithm is not differentiable and propose an alternative differentiable formulation which we insert as a final layer into a 3D convolutional neural network. We further propose a set of loss functions which allow for training our model with sparse point supervision. Our experiments demonstrate that the model allows for predicting sub-voxel accurate 3D shapes of arbitrary topology. Additionally, it learns to complete shapes and to separate an object's inside from its outside even in the presence of sparse and incomplete ground truth. We investigate the benefits of our approach on the task of inferring shapes from 3D point clouds. Our model is flexible and can be combined with a variety of shape encoder and shape inference techniques.},
   pdf = {http://www.cvlibs.net/publications/Liao2018CVPR.pdf},
   code = {http://www.cvlibs.net/redirect.php?site=deep_marching_cubes},
-  teaser = {cvpr2018.png},
+  teaser = {cvpr2018.jpg},
 }
 
 @inproceedings{Sevilla:GCPR:2018,
@@ -227,7 +274,7 @@
   year = {2018},
   abstract = {Most of the top performing action recognition methods use optical flow as a black box input. Here we take a deeper look at the combination of flow and action recognition, and investigate why optical flow is helpful, what makes a flow method good for action recognition, and how we can make it better. In particular, we investigate the impact of different flow algorithms and input transformations to better understand how these affect a state-of-the-art action recognition method. Furthermore, we fine tune two neural-network flow methods end-to-end on the most widely used action recognition dataset (UCF101). Based on these experiments, we make the following five observations: 1) optical flow is useful for action recognition because it is invariant to appearance, 2) optical flow methods are optimized to minimize end-point-error (EPE), but the EPE of current methods is not well correlated with action recognition performance, 3) for the flow methods tested, accuracy at boundaries and at small displacements is most correlated with action recognition performance, 4) training optical flow to minimize classification error instead of minimizing EPE improves recognition performance, and 5) optical flow learned for the task of action recognition differs from traditional optical flow especially inside the human body and at the boundary of the body. These observations may encourage optical flow researchers to look beyond EPE as a goal and guide action recognition researchers to seek better motion cues, leading to a tighter integration of the optical flow and action recognition communities.},
   pdf = {http://www.cvlibs.net/publications/Sevilla-Lara2018GCPR.pdf},
-  teaser = {gcpr2018.png},
+  teaser = {gcpr2018.jpg},
 }
 
 
@@ -303,7 +350,7 @@
   supp = {http://www.cvlibs.net/publications/Tosi2021CVPR_supplementary.pdf},
   code = {https://github.com/fabiotosi92/SMD-Nets},
   blog = {https://autonomousvision.github.io/smdnets/},
-  teaser = {cvpr2021.png},
+  teaser = {cvpr2021.jpg},
   selected = True,
 }
 
@@ -339,7 +386,7 @@
         statistics of the sparse depth measurements.},
   pdf = {http://www.cvlibs.net/publications/Liu2021TIP.pdf},
   code = {https://github.com/LINA-lln/Steering-KernelNet},
-  teaser = {tip2021.png},
+  teaser = {tip2021.jpg},
   selected = True,
 }
 
@@ -355,7 +402,7 @@
   abstract={Image representation has been intensively explored in the domain of computer vision for its significant influence on the relative tasks such as image clustering and classification. It is valuable to learn a low-dimensional representation of an image which preserves its inherent information from the original image space. At the perspective of manifold learning, this is implemented with the local invariant idea to capture the intrinsic low-dimensional manifold embedded in the high-dimensional input space. Inspired by the recent successes of deep architectures, we propose a local invariant deep nonlinear mapping algorithm, called graph regularized auto-encoder (GAE). With the graph regularization, the proposed method preserves the local connectivity from the original image space to the representation space, while the stacked auto-encoders provide explicit encoding model for fast inference and powerful expressive capacity for complex modeling. Theoretical analysis shows that the graph regularizer penalizes the weighted Frobenius norm of the Jacobian matrix of the encoder mapping, where the weight matrix captures the local property in the input space. Furthermore, the underlying effects on the hidden representation space are revealed, providing insightful explanation to the advantage of the proposed method. Finally, the experimental results on both clustering and classification tasks demonstrate the effectiveness of our GAE as well as the correctness of the proposed theoretical analysis, and it also suggests that GAE is a superior solution to the current deep representation learning techniques comparing with variant auto-encoders and existing local invariant methods.
 },
   pdf={https://ieeexplore.ieee.org/document/7556994},
-  teaser = {tip2017.png}
+  teaser = {tip2017.jpg}
 }
 
 @article{liao2017place,
@@ -369,8 +416,8 @@
   abstract={Place classification is a fundamental ability that a robot should possess to carry out effective human-robot interactions. In recent years, there is a high exploitation of artificial intelligence algorithms in robotics applications. Inspired by the recent successes of deep learning methods, we propose an end-to-end learning approach for the place classification problem. With deep architectures, this methodology automatically discovers features and contributes in general to higher classification accuracies. The pipeline of our approach is composed of three parts. First, we construct multiple layers of laser range data to represent the environment information in different levels of granularity. Second, each layer of data are fed into a deep neural network for classification, where a graph regularization is imposed to the deep architecture for keeping local consistency between adjacent samples. Finally, the predicted labels obtained from all layers are fused based on confidence trees to maximize the overall confidence. Experimental results validate the effectiveness of our end-to-end place classification framework in which both the multilayer structure and the graph regularization promote the classification performance. Furthermore, results show that the features automatically learned from the raw input range data can achieve competitive results to the features constructed based on statistical and geometrical information.
 },
   pdf = {https://ieeexplore.ieee.org/document/7501830},
-  teaser = {tcds2017.png},
-  selected = True,
+  teaser = {tcds2017.jpg},
+  selected = False,
 }
 
 @inproceedings{liao2017parse,
@@ -380,7 +427,7 @@
   year={2017},
   abstract={Many standard robotic platforms are equipped with at least a fixed 2D laser range finder and a monocular camera. Although those platforms do not have sensors for 3D depth sensing capability, knowledge of depth is an essential part in many robotics activities. Therefore, recently, there is an increasing interest in depth estimation using monocular images. As this task is inherently ambiguous, the data-driven estimated depth might be unreliable in robotics applications. In this paper, we have attempted to improve the precision of monocular depth estimation by introducing 2D planar observation from the remaining laser range finder without extra cost. Specifically, we construct a dense reference map from the sparse laser range data, redefining the depth estimation task as estimating the distance between the real and the reference depth. To solve the problem, we construct a novel residual of residual neural network, and tightly combine the classification and regression losses for continuous depth estimation. Experimental results suggest that our method achieves considerable promotion compared to the state-of-the-art methods on both NYUD2 and KITTI, validating the effectiveness of our method on leveraging the additional sensory information. We further demonstrate the potential usage of our method in obstacle avoidance where our methodology provides comprehensive depth information compared to the solution using monocular camera or 2D laser range finder alone.},
   pdf={https://arxiv.org/pdf/1611.02174.pdf},
-  teaser={icra2017.png},
+  teaser={icra2017.jpg},
   selected={true},
 }
 
@@ -393,6 +440,6 @@
   abstract={Scene classification is a fundamental perception task for environmental understanding in today's robotics. In this paper, we have attempted to exploit the use of popular machine learning technique of deep learning to enhance scene understanding, particularly in robotics applications. As scene images have larger diversity than the iconic object images, it is more challenging for deep learning methods to automatically learn features from scene images with less samples. Inspired by human scene understanding based on object knowledge, we address the problem of scene classification by encouraging deep neural networks to incorporate object-level information. This is implemented with a regularization of semantic segmentation. With only 5 thousand training images, as opposed to 2.5 million images, we show the proposed deep architecture achieves superior scene classification results to the state-of-the-art on a publicly available SUN RGB-D dataset. In addition, performance of semantic segmentation, the regularizer, also reaches a new record with refinement derived from predicted scene labels. Finally, we apply our SUN RGB-D dataset trained model to a mobile robot captured images to classify scenes in our university demonstrating the generalization ability of the proposed algorithm.
 },
   pdf={https://arxiv.org/pdf/1509.06470.pdf},
-  teaser={icra2016.png},
+  teaser={icra2016.jpg},
 }
 

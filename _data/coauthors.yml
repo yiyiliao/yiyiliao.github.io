@@ -1,3 +1,7 @@
+"Bai":
+  - firstname: ["Dongfeng"]
+    url: https://scholar.google.com/citations?user=aubQLGYAAAAJ&hl=zh-CN
+
 "Black":
   - firstname: ["Michael", "M."]
     url: https://ps.is.tuebingen.mpg.de/person/black 
@@ -62,10 +66,16 @@
     url: https://april.zju.edu.cn/team/lina-liu/
   - firstname: ["Yunhui"]
     url: https://www.mrc-cuhk.com/people/prof-yun-hui-liu
+  - firstname: ["Bingbing"]
+    url: https://scholar.google.com.sg/citations?user=-rCulKwAAAAJ&hl=en
 
 "Lin":
   - firstname: ["Haotong"]
     url: https://haotongl.github.io/
+
+"Lyu":
+  - firstname: ["Xiaoyang"]
+    url: https://shawlyu.github.io/
 
 "Mescheder":
   - firstname: ["Lars", "L."]
@@ -97,6 +107,10 @@
   - firstname: ["Gernot", "Gernot<sup>*</sup>"]
     url: https://griegler.github.io/ 
 
+"Qiu":
+  - firstname: ["Weichao"]
+    url: https://weichaoqiu.com/
+
 "Schmitt":
   - firstname: ["Carolin", "C."]
     url: https://avg.is.tuebingen.mpg.de/person/cschmitt 
@@ -112,6 +126,10 @@
 "Sevilla-Lara":
   - firstname: ["Laura", "L."]
     url: https://people.cs.umass.edu/~lsevilla/ 
+
+"Shao":
+  - firstname: ["Jiahao"]
+    url: https://jhaoshao.github.io/
 
 "Shi":
   - firstname: ["Lei", "L."]
