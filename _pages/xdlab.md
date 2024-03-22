@@ -22,7 +22,7 @@ Hongyu Zhou
 Chaojie Ji \\
 Hao Li \\
 Hanlei Guo \\
-Jiaxin Huang
+[Jiaxin Huang](https://jaceyhuang.github.io/)
 
 ### Research Interns
 Lu Xu \\

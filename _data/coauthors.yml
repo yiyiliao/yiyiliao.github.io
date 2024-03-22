@@ -35,9 +35,19 @@
   - firstname: ["Sheng"]
     url: https://scholar.google.com.hk/citations?user=mbpgOmEAAAAJ
 
+"Golyanik":
+  - firstname: ["Vladislav"]
+    url: https://people.mpi-inf.mpg.de/~golyanik/
+
 "Huang":
   - firstname: ["Lichao"]
     url: https://scholar.google.com/citations?user=F2e_jZMAAAAJ
+  - firstname: ["Jia-Bin"]
+    url: https://jbhuang0604.github.io/
+
+"Ilg":
+  - firstname: ["Eddy"]
+    url: https://cvmp.cs.uni-saarland.de/#eddy-ilg
 
 "Jampani":
   - firstname: ["Varun", "V."]
@@ -54,6 +64,10 @@
 "Koltun":
   - firstname: ["Vladlen", "V."]
     url: http://vladlen.info/
+
+"Lenssen":
+  - firstname: ["Jan Eric"]
+    url: https://janericlenssen.github.io/
 
 "Li":
   - firstname: ["Zizhang"]
@@ -99,6 +113,10 @@
   - firstname: ["Marc", "M."]
     url: https://people.inf.ethz.ch/pomarc/ 
 
+"Pons-Moll":
+  - firstname: ["Gerard"]
+    url: https://virtualhumans.mpi-inf.mpg.de/people/pons-moll.html
+
 "Reiser":
   - firstname: ["Christian"]
     url: https://avg.is.tuebingen.mpg.de/person/creiser
@@ -106,6 +124,10 @@
 "Riegler":
   - firstname: ["Gernot", "Gernot<sup>*</sup>"]
     url: https://griegler.github.io/ 
+
+"Rupprecht":
+  - firstname: ["Christian"]
+    url: https://chrirupp.github.io/
 
 "Qiu":
   - firstname: ["Weichao"]
@@ -145,6 +167,10 @@
   - firstname: ["Fabio"]
     url: http://vision.disi.unibo.it/~ftosi/
 
+"Theobalt":
+  - firstname: ["Christian"]
+    url: https://people.mpi-inf.mpg.de/~theobalt/
+
 "Wang":
   - firstname: ["Yue", "Y."]
     url: https://ywang-zju.github.io/ 
@@ -174,6 +200,10 @@
     url: https://person.zju.edu.cn/en/yul
   - firstname: ["Kaicheng"]
     url: https://scholar.google.com/citations?user=Jtmq_m0AAAAJ
+
+"Yunus":
+  - firstname: ["Raza"]
+    url: https://scholar.google.com/citations?user=j0GdrVcAAAAJ&hl=en
 
 "Zhang":
   - firstname: ["Shangzhan"]
