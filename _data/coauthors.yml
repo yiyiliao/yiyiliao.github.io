@@ -106,7 +106,7 @@
 "Peng":
   - firstname: ["Songyou"]
     url: https://pengsongyou.github.io/ 
-  - firstname: ["Sida"]
+  - firstname: ["Sida", "Sida<sup>*</sup>"]
     url: https://pengsida.net/
 
 "Pollefeys":
@@ -156,11 +156,11 @@
 "Shi":
   - firstname: ["Lei", "L."]
     url: https://au.linkedin.com/in/lei-shi-342b152b
-  - firstname: ["Zifan"]
+  - firstname: ["Zifan", "Zifan<sup>*</sup>"]
     url: https://vivianszf.github.io/
 
 "Shen":
-  - firstname: ["Yujun"]
+  - firstname: ["Yujun", "Yujun<sup>&#x0266F;</sup>"]
     url: https://shenyujun.github.io/
 
 "Tosi":
@@ -186,7 +186,7 @@
     url: http://www.cse.zju.edu.cn/english/redir.php?catalog_id=1113878&object_id=1115898
 
 "Xu":
-  - firstname: ["Yinghao"]
+  - firstname: ["Yinghao", "Yinghao<sup>*</sup>"]
     url: https://justimyhxu.github.io/
 
 "Yeung":
