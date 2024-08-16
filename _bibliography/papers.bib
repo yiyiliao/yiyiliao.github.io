@@ -9,6 +9,43 @@
 @STRING{NEURIPS = {Advances in Neural Information Processing Systems (NeurIPS)}}
 @STRING{ARXIV = {arXiv.org}}
 
+@inproceedings{Chen2024ECCV,
+  title = {TeFF: Learning 3D-Aware GANs from Unposed Images with Template Feature Field},
+  author = {Chen, Xinya and Guo, Hanlei and Bin, Yanrui and Zhang, Shangzhan and Yang, Yuanbo and Wang, Yue and Shen, Yujun and Liao, Yiyi<sup>&#x0266F;</sup>},
+  booktitle = ECCV,
+  year = {2024},
+  abstract = {Collecting accurate camera poses of training images has been shown to well serve the learning of 3D-aware generative adversarial networks (GANs) yet can be quite expensive in practice. This work targets learning 3D-aware GANs from unposed images, for which we propose to perform on-the-fly pose estimation of training images with a learned template feature field (TeFF). Concretely, in addition to a generative radiance field as in previous approaches, we ask the generator to also learn a field from 2D semantic features while sharing the density from the radiance field. Such a framework allows us to acquire a canonical 3D feature template leveraging the dataset mean discovered by the generative model, and further efficiently estimate the pose parameters on real data. Experimental results on various challenging datasets demonstrate the superiority of our approach over state-of-the-art alternatives from both the qualitative and the quantitative perspectives.},
+  pdf = {https://arxiv.org/pdf/2404.05705.pdf},
+  award = {(Oral)},
+  teaser = {Chen2024ECCV.gif},
+  website = {https://xdimlab.github.io/TeFF/},
+  selected = True,
+}
+
+@inproceedings{Ji2024ECCV,
+  title = {REFRAME: REFlective Surface ReAl-Time Rendering for MobilE Devices},
+  author = {Ji, Chaojie and Li, Yufeng and Liao, Yiyi<sup>&#x0266F;</sup>},
+  booktitle = ECCV,
+  year = {2024},
+  abstract = {This work tackles the challenging task of achieving real-time novel view synthesis for reflective surfaces across various scenes. Existing real-time rendering methods, especially those based on meshes, often have subpar performance in modeling surfaces with rich view-dependent appearances. Our key idea lies in leveraging meshes for rendering acceleration while incorporating a novel approach to parameterize view-dependent information. We decompose the color into diffuse and specular, and model the specular color in the reflected direction based on a neural environment map. Our experiments demonstrate that our method achieves comparable reconstruction quality for highly reflective surfaces compared to state-of-the-art offline methods, while also efficiently enabling real-time rendering on edge devices such as smartphones.},
+  pdf = {https://arxiv.org/pdf/2403.16481.pdf},
+  teaser = {Ji2024ECCV.jpg},
+  website = {https://xdimlab.github.io/REFRAME/},
+  selected = True,
+}
+
+@inproceedings{Miao2024ECCV,
+  title = {EDUS: Efficient Depth-Guided Urban View Synthesis},
+  author = {Miao, Sheng<sup>*</sup> and Huang, Jiaxin<sup>*</sup> and Dongfeng, Bai and Qiu, Weichao and Liu, Bingbing and Geiger, Andreas and Liao, Yiyi<sup>&#x0266F;</sup>},
+  booktitle = ECCV,
+  year = {2024},
+  abstract = {Recent advances in implicit scene representation enable high- fidelity street view novel view synthesis. However, existing methods op- timize a neural radiance field for each scene, relying heavily on dense training images and extensive computation resources. To mitigate this shortcoming, we introduce a new method called Efficient Depth-Guided Urban View Synthesis (EDUS) for fast feed-forward inference and effi- cient per-scene fine-tuning. Different from prior generalizable methods that infer geometry based on feature matching, EDUS leverages noisy predicted geometric priors as guidance to enable generalizable urban view synthesis from sparse input images. The geometric priors allow us to ap- ply our generalizable model directly in the 3D space, gaining robustness across various sparsity levels. Through comprehensive experiments on the KITTI-360 and Waymo datasets, we demonstrate promising gener- alization abilities on novel street scenes. Moreover, our results indicate that EDUS achieves state-of-the-art performance in sparse view settings when combined with fast test-time optimization.},
+  pdf = {https://arxiv.org/pdf/2407.12395.pdf},
+  teaser = {Miao2024ECCV.gif},
+  website = {https://xdimlab.github.io/EDUS/},
+  selected = True,
+}
+
 @inproceedings{Zhou2024CVPR,
   title = {HUGS: Holistic Urban 3D Scene Understanding via Gaussian Splatting},
   author = {Zhou, Hongyu and Shao, Jiahao and Xu, Lu and Dongfeng, Bai and Qiu, Weichao and Liu, Bingbing and Wang, Yue and Geiger, Andreas and Liao, Yiyi<sup>&#x0266F;</sup>},
@@ -40,6 +77,7 @@
   teaser = {Yunus2024CGF.jpg},
   selected = True,
   abstract = {Reconstructing models of the real world, including 3D geometry, appearance, and motion of real scenes, is essential for computer graphics and computer vision. It enables the synthesizing of photorealistic novel views, useful for the movie industry and AR/VR applications. It also facilitates the content creation necessary in computer games and AR/VR by avoiding laborious manual design processes. Further, such models are fundamental for intelligent computing systems that need to interpret real-world scenes and actions to act and interact safely with the human world. Notably, the world surrounding us is dynamic, and reconstructing models of dynamic, non-rigidly moving scenes is a severely underconstrained and challenging problem.  This state-of-the-art report (STAR) offers the reader a comprehensive summary of state-of-the-art techniques with monocular and multi-view inputs such as data from RGB and RGB-D sensors, among others, conveying an understanding of different approaches, their potential applications, and promising further research directions. The report covers 3D reconstruction of general non-rigid scenes and further addresses the techniques for scene decomposition, editing and controlling, and generalizable and generative modeling. More specifically, we first review the common and fundamental concepts necessary to understand and navigate the field and then discuss the state-of-the-art techniques by reviewing recent approaches that use traditional and machine-learning-based neural representations, including a discussion on the newly enabled applications. The STAR is con- cluded with a discussion of the remaining limitations and open challenges.},
+  pdf = {https://arxiv.org/pdf/2403.15064.pdf}
 }
 
 
@@ -48,6 +86,7 @@
   author = {Mao, Yunxuan and Yu, Xuan and Wang, Kai and Wang, Yue and Xiong, Rong and Liao, Yiyi<sup>&#x0266F;</sup>},
   booktitle = ICRA,
   year = {2024},
+  award = {(Best Robot Vision Paper)},
   abstract = {Neural implicit representations have emerged as a promising solution for providing dense geometry in Simultaneous Localization and Mapping (SLAM). However, existing methods in this direction fall short in terms of global consistency and low latency. This paper presents NGEL-SLAM to tackle the above challenges. To ensure global consistency, our system leverages a traditional feature-based tracking module that incorporates loop closure. Additionally, we maintain a global consistent map by representing the scene using multiple neural implicit fields, enabling quick adjustment to the loop closure.  Moreover, our system allows for fast convergence through the use of octree-based implicit representations. The combination of rapid response to loop closure and fast convergence makes our system a truly low-latency system that achieves global consistency. Our system enables rendering high-fidelity RGBD images, along with extracting dense and complete surfaces.  Experiments on both synthetic and real-world datasets suggest that our system achieves state-of-the-art tracking and mapping accuracy while maintaining low latency.},
   teaser = {Mao2024ICRA.jpg},
   selected = True,
@@ -202,6 +241,7 @@
   supp = {http://www.cvlibs.net/publications/Peng2021NEURIPS_supplementary.pdf},
   code = {https://github.com/autonomousvision/shape_as_points},
   teaser = {sap.gif},
+  award = {(Oral)},
   selected = True,
 }
 
@@ -246,6 +286,7 @@
   year = {2022},
   abstract = {For the last few decades, several major subfields of artificial intelligence including computer vision, graphics, and robotics have progressed largely independently from each other. Recently, however, the community has realized that progress towards robust intelligent systems such as self-driving cars requires a concerted effort across the different fields. This motivated us to develop KITTI-360, successor of the popular KITTI dataset. KITTI-360 is a suburban driving dataset which comprises richer input modalities, comprehensive semantic instance annotations and accurate localization to facilitate research at the intersection of vision, graphics and robotics. For efficient annotation, we created a tool to label 3D scenes with bounding primitives and developed a model that transfers this information into the 2D image domain, resulting in over  150k images and 1B 3D points with coherent semantic instance annotations across 2D and 3D. Moreover, we established benchmarks and baselines for several tasks relevant to mobile perception, encompassing problems from computer vision, graphics, and robotics on the same dataset, e.g., semantic scene understanding, novel view synthesis and semantic SLAM. KITTI-360 will enable progress at the intersection of these research areas and thus contribute towards solving one of today's grand challenges: the development of fully autonomous self-driving systems.},
   pdf = {http://www.cvlibs.net/publications/Liao2022PAMI.pdf},
+  award = {(ESI Highly Cited Paper)},
   code = {http://www.cvlibs.net/datasets/kitti-360/},
   blog = {https://autonomousvision.github.io/kitti-360/},
   teaser = {kitti360.jpg},

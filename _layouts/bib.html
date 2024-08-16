@@ -25,7 +25,14 @@
     {% if entry.type == "thesis" %}
       {{reference}}
     {% else %}
-      <div class="title">{{entry.title}}</div>
+      {% if entry.award %}
+        <div class="title">
+          <span>{{entry.title}}</span>
+          <span style="color:red;">{{entry.award}}</span>
+        </div>
+      {% else %}
+        <div class="title">{{entry.title}}</div>
+      {% endif %}
       <div class="author">
         {% for author in entry.author_array %}
           {% assign author_is_self = false %}
