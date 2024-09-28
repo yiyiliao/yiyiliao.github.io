@@ -11,6 +11,7 @@ logo: assets/logo/xdlab_logo.jpg
 
 Welcome to our X-D Lab! We are interested in exploring effective and efficient 2D, 3D and 4D representations for various applications in autonomous driving, robotics and immersive media. 
 
+<img src="/xdlab/assets/gallary/xdlab2024.jpg" alt="image" width="100%" height="auto">
 <img src="/xdlab/assets/gallary/202304.jpg" alt="image" width="100%" height="auto">
 
 ### PhD Students
