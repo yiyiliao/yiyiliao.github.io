@@ -23,13 +23,15 @@ Hongyu Zhou
 Chaojie Ji \\
 Hao Li \\
 Hanlei Guo \\
-[Jiaxin Huang](https://jaceyhuang.github.io/)
+[Jiaxin Huang](https://jaceyhuang.github.io/) \\
+Xianxu Xiang \\
+Chengzhen Wu
 
 ### Research Interns
-Lu Xu \\
 Yuanbo Yang \\
-Shukai Zhang 
+[Jiahao Shao](https://jhaoshao.github.io/)
 
 ### Former Students
 [Xiao Fu](https://fuxiao0719.github.io/) (now PhD student at CUHK)\\
-[Xinya Chen](https://xinyachen21.github.io/)
+[Xinya Chen](https://xinyachen21.github.io/) \\
+Lu Xu 
