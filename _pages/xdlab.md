@@ -28,10 +28,10 @@ Xianxu Xiang \\
 Chengzhen Wu
 
 ### Research Interns
-Yuanbo Yang \\
 [Jiahao Shao](https://jhaoshao.github.io/)
 
-### Former Students
+### Former Students/Interns
 [Xiao Fu](https://fuxiao0719.github.io/) (now PhD student at CUHK)\\
 [Xinya Chen](https://xinyachen21.github.io/) \\
 Lu Xu 
+Shukai Zhang
