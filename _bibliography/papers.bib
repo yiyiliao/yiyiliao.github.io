@@ -9,6 +9,19 @@
 @STRING{NEURIPS = {Advances in Neural Information Processing Systems (NeurIPS)}}
 @STRING{ARXIV = {arXiv.org}}
 
+
+@inproceedings{Wu2024RAL,
+  title = {DORec: Decomposed Object Reconstruction and Segmentation Utilizing 2D Self-Supervised Features},
+  author = {Wu, Jun and Li, Sicheng and Ji, Sihui and Yang, Yifei and  Wang, Yue and Xiong, Rong<sup>&#x0266F;</sup> and Liao, Yiyi<sup>&#x0266F;</sup>},
+  booktitle = RAL,
+  year = {2024},
+  abstract = {Recovering 3D geometry and textures of individual objects is crucial for many robotics applications, such as manipulation, pose estimation, and autonomous driving. However, decomposing a target object from a complex background is challenging. Most existing approaches rely on costly manual labels to acquire object instance perception. Recent advancements in 2D self-supervised learning offer new prospects for identifying objects of interest, yet leveraging such noisy 2D features for clean decomposition remains difficult. In this paper, we propose a Decomposed Object Reconstruction (DORec) network based on neural implicit representations. Our key idea is to use 2D self-supervised features to create two levels of masks for supervision: a binary mask for foreground regions and a K-cluster mask for semantically similar regions. These complementary masks result in robust decomposition. Experimental results on different datasets show DORec's superiority in segmenting and reconstructing diverse foreground objects from varied backgrounds enabling downstream tasks such as pose estimation.},
+  teaser = {Wu2024RAL.jpg},
+  pdf = {https://arxiv.org/pdf/2310.11092.pdf},
+  selected = True,
+}
+
+
 @inproceedings{Chen2024ECCV,
   title = {TeFF: Learning 3D-Aware GANs from Unposed Images with Template Feature Field},
   author = {Chen, Xinya and Guo, Hanlei and Bin, Yanrui and Zhang, Shangzhan and Yang, Yuanbo and Wang, Yue and Shen, Yujun and Liao, Yiyi<sup>&#x0266F;</sup>},
@@ -19,6 +32,7 @@
   award = {(Oral)},
   teaser = {Chen2024ECCV.gif},
   website = {https://xdimlab.github.io/TeFF/},
+  code = {https://github.com/XinyaChen21/TeFF/},
   selected = True,
 }
 
@@ -31,6 +45,7 @@
   pdf = {https://arxiv.org/pdf/2403.16481.pdf},
   teaser = {Ji2024ECCV.jpg},
   website = {https://xdimlab.github.io/REFRAME/},
+  code = {https://github.com/MARVELOUSJI/REFRAME},
   selected = True,
 }
 
@@ -43,6 +58,7 @@
   pdf = {https://arxiv.org/pdf/2407.12395.pdf},
   teaser = {Miao2024ECCV.gif},
   website = {https://xdimlab.github.io/EDUS/},
+  code = {https://github.com/Miaosheng1/EDUS},
   selected = True,
 }
 
@@ -55,6 +71,7 @@
   pdf = {https://arxiv.org/pdf/2403.12722.pdf},
   teaser = {Zhou2024CVPR.gif},
   website = {https://xdimlab.github.io/hugs_website/},
+  code = {https://github.com/hyzhou404/HUGS},
   selected = True,
 }
 
@@ -66,6 +83,8 @@
   abstract = {The emergence of Neural Radiance Fields (NeRF) has greatly impacted 3D scene modeling and novel-view synthesis. As a kind of visual media for 3D scene representation, compression with high rate-distortion performance is an eternal target. Motivated by advances in neural compression and neural field representation, we propose NeRFCodec, an end-to-end NeRF compression framework that integrates non-linear transform, quantization, and entropy coding for memory-efficient scene representation. Since training a non-linear transform directly on a large scale of NeRF feature planes is impractical, we discover that pre-trained neural 2D image codec can be utilized for compressing the features when adding content-specific parameters. Specifically, we reuse neural 2D image codec but modify its encoder and decoder heads, while keeping the other parts of the pre-trained decoder frozen. This allows us to train the full pipeline via supervision of rendering loss and entropy loss, yielding the rate-distortion balance by updating the content-specific parameters. At test time, the bitstreams containing latent code, feature decoder head, and other side information are transmitted for communication. Experimental results demonstrate our method outperforms existing NeRF compression methods, enabling high-quality novel view synthesis with a memory budget of 0.5 MB.},
   pdf = {https://arxiv.org/pdf/2404.02185.pdf},
   teaser = {Li2024CVPR.jpg},
+  website = {https://jasonlsc.github.io/nerfcodec_homepage/},
+  code = {https://github.com/JasonLSC/NeRFCodec_public},
   selected = True,
 }
 
@@ -90,7 +109,8 @@
   abstract = {Neural implicit representations have emerged as a promising solution for providing dense geometry in Simultaneous Localization and Mapping (SLAM). However, existing methods in this direction fall short in terms of global consistency and low latency. This paper presents NGEL-SLAM to tackle the above challenges. To ensure global consistency, our system leverages a traditional feature-based tracking module that incorporates loop closure. Additionally, we maintain a global consistent map by representing the scene using multiple neural implicit fields, enabling quick adjustment to the loop closure.  Moreover, our system allows for fast convergence through the use of octree-based implicit representations. The combination of rapid response to loop closure and fast convergence makes our system a truly low-latency system that achieves global consistency. Our system enables rendering high-fidelity RGBD images, along with extracting dense and complete surfaces.  Experiments on both synthetic and real-world datasets suggest that our system achieves state-of-the-art tracking and mapping accuracy while maintaining low latency.},
   teaser = {Mao2024ICRA.jpg},
   selected = True,
-  pdf = {https://arxiv.org/pdf/2311.09525.pdf}
+  pdf = {https://arxiv.org/pdf/2311.09525.pdf},
+  code = {https://github.com/YunxuanMao/ngel_slam},
 }
 
 
@@ -114,6 +134,7 @@
   teaser = {Yu2023RAL.jpg},
   selected = True,
   pdf = {https://arxiv.org/pdf/2304.04624.pdf},
+  code = {https://github.com/yuxuan1206/NF-Atlas},
   website = {https://yuxuan1206.github.io/NFAtlas/}
 }
 
@@ -126,6 +147,7 @@
   pdf = {https://arxiv.org/pdf/2303.14167.pdf},
   teaser = {Yang2023ICCV.gif},
   website = {https://lv3d.github.io/urbanGIRAFFE/},
+  code = {https://github.com/freemty/urbanGIRAFFE},
   selected = True,
 }
 
@@ -138,6 +160,7 @@
   pdf = {https://arxiv.org/pdf/2303.14167.pdf},
   teaser = {Chen2023ICCV.jpg},
   website = {https://xdimlab.github.io/VeRi3d/},
+  code = {https://github.com/XinyaChen21/Veri3d},
   selected = True,
 }
 
@@ -149,6 +172,7 @@
   abstract = {Recently, neural implicit surfaces have become popular for multi-view reconstruction. To facilitate practical applications like scene editing and manipulation, some works extend the framework with semantic masks input for the object-compositional reconstruction rather than the holistic perspective. Though achieving plausible disentanglement, the performance drops significantly when processing the indoor scenes where objects are usually partially observed. We propose RICO to address this by regularizing the unobservable regions for indoor compositional reconstruction. Our key idea is to first regularize the smoothness of the occluded background, which then in turn guides the foreground object reconstruction in unobservable regions based on the object-background relationship. Particularly, we regularize the geometry smoothness of occluded background patches. With the improved background surface, the signed distance function and the reversedly rendered depth of objects can be optimized to bound them within the background range. Extensive experiments show our method outperforms other methods on synthetic and real-world indoor scenes and prove the effectiveness of proposed regularizations.},
   pdf = {https://arxiv.org/pdf/2303.08605.pdf},
   teaser = {Li2023ICCV.jpg},
+  code = {https://github.com/kyleleey/RICO},
   selected = True,
 }
 
@@ -175,6 +199,7 @@
   pdf = {https://arxiv.org/pdf/2301.07702.pdf},
   teaser = {Shi2023CVPR.jpeg},
   website = {https://vivianszf.github.io/pof3d/},
+  code = {https://github.com/VivianSZF/pof3d},
   selected = True,
 }
 
@@ -187,6 +212,7 @@
   pdf = {https://arxiv.org/pdf/2302.07224.pdf},
   teaser = {Zhang2023CVPR.gif},
   website = {https://zju3dv.github.io/paintingnature/},
+  code = {https://github.com/zhanghe3z/PaintingNature/blob/main/README.md},
   selected = True,
 }
 
@@ -200,6 +226,7 @@
 },
   pdf = {https://arxiv.org/pdf/2206.07695.pdf},
   website = {https://katjaschwarz.github.io/voxgraf},
+  code = {https://github.com/autonomousvision/voxgraf},
   teaser = {voxgraf.gif},
   selected = True,
 }
