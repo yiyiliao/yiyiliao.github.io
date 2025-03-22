@@ -9,6 +9,63 @@
 @STRING{NEURIPS = {Advances in Neural Information Processing Systems (NeurIPS)}}
 @STRING{ARXIV = {arXiv.org}}
 
+@inproceedings{Li2025CVPR,
+  title = {GIFStream: 4D Gaussian-based Immersive Video with Feature Stream},
+  author = {Li, Hao and Li, Sicheng and Gao, Xiang and Batuer, Abudouaihati and Yu, Lu<sup>&#x0266F;</sup> and Liao, Yiyi<sup>&#x0266F;</sup>},
+  booktitle = CVPR,
+  year = {2025},
+  abstract = {Immersive video offers a 6-Dof-free viewing experience, potentially playing a key role in future video technology. Recently, 4D Gaussian Splatting has gained attention as an effective approach for immersive video due to its high rendering efficiency and quality, though maintaining quality with manageable storage remains challenging. To address this, we introduce GIFStream, a novel 4D Gaussian representation using a canonical space and a deformation field enhanced with time-dependent feature streams. These feature streams enable complex motion modeling and allow efficient compression by leveraging their motion-awareness and temporal correspondence. Additionally, we incorporate both temporal and spatial compression networks for end-to-end compression. Experimental results show that GIFStream delivers high-quality immersive video at 30 Mbps, with real-time rendering and fast decoding on an RTX 4090.},
+  teaser = {Li2025CVPR.jpg},
+  selected = True,
+}
+
+@inproceedings{Shao2025CVPR,
+  title = {Learning temporally consistent video depth from video diffusion priors},
+  author = {Shao, Jiahao and Yang, Yuanbo and Zhou, Hongyu and Zhang, Youmin and Shen, Yujun and Guizilini, Vitor and Wang, Yue and Poggi, Matteo and Liao, Yiyi<sup>&#x0266F;</sup>},
+  booktitle = CVPR,
+  year = {2025},
+  abstract = {This work addresses the challenge of streamed video depth estimation, which expects not only per-frame accuracy but, more importantly, cross-frame consistency. We argue that sharing contextual information between frames or clips is pivotal in fostering temporal consistency. Thus, instead of directly developing a depth estimator from scratch, we reformulate this predictive task into a conditional generation problem to provide contextual information within a clip and across clips. Specifically, we propose a consistent context-aware training and inference strategy for arbitrarily long videos to provide cross-clip context. We sample independent noise levels for each frame within a clip during training while using a sliding window strategy and initializing overlapping frames with previously predicted frames without adding noise. Moreover, we design an effective training strategy to provide context within a clip. Extensive experimental results validate our design choices and demonstrate the superiority of our approach, dubbed ChronoDepth.},
+  teaser = {Shao2025CVPR.gif},
+  pdf = {https://arxiv.org/pdf/2406.01493},
+  website = {https://xdimlab.github.io/ChronoDepth/},
+  selected = True,
+}
+
+@inproceedings{Lu2025CVPR,
+  title = {UrbanCAD: Towards Highly Controllable and Photorealistic 3D Vehicles for Urban Scene Simulation},
+  author = {Lu, Yichong and Cai, Yichi and Zhang, Shangzhan and Zhou, Hongyu and Hu, Haoji and Yu, Huimin and Geiger, Andreas and Liao, Yiyi<sup>&#x0266F;</sup>},
+  booktitle = CVPR,
+  year = {2025},
+  abstract = {Photorealistic 3D vehicle models with high controllability are essential for autonomous driving simulation and data augmentation. While handcrafted CAD models provide flexible controllability, free CAD libraries often lack the high-quality materials necessary for photorealistic rendering. Conversely, reconstructed 3D models offer high-fidelity rendering but lack controllability. In this work, we introduce UrbanCAD, a framework that pushes the frontier of the photorealism-controllability trade-off by generating highly controllable and photorealistic 3D vehicle digital twins from a single urban image and a collection of free 3D CAD models and handcrafted materials. These digital twins enable realistic 360-degree rendering, vehicle insertion, material transfer, relighting, and component manipulation such as opening doors and rolling down windows, supporting the construction of long-tail scenarios. To achieve this, we propose a novel pipeline that operates in a retrieval-optimization manner, adapting to observational data while preserving flexible controllability and fine-grained handcrafted details. Furthermore, given multi-view background perspective and fisheye images, we approximate environment lighting using fisheye images and reconstruct the background with 3DGS, enabling the photorealistic insertion of optimized CAD models into rendered novel view backgrounds. Experimental results demonstrate that UrbanCAD outperforms baselines based on reconstruction and retrieval in terms of photorealism. Additionally, we show that various perception models maintain their accuracy when evaluated on UrbanCAD with in-distribution configurations but degrade when applied to realistic out-of-distribution data generated by our method. This suggests that UrbanCAD is a significant advancement in creating photorealistic, safety-critical driving scenarios for downstream applications.},
+  teaser = {Lu2025CVPR.jpg},
+  website = {https://xdimlab.github.io/UrbanCAD/},
+  pdf = {https://arxiv.org/pdf/2411.19292},
+  selected = True,
+}
+
+@inproceedings{Miao2025CVPR,
+  title = {EVolSplat: Efficient Volume-based Gaussian Splatting for Urban View Synthesis},
+  author = {Miao, Sheng and Huang, Jiaxin and Bai, Dongfeng and Yan, Xu and Zhou, Hongyu and Wang, Yue and Liu, Bingbing and Geiger, Andreas and Liao, Yiyi<sup>&#x0266F;</sup>},
+  booktitle = CVPR,
+  year = {2025},
+  abstract = {Novel view synthesis of urban scenes is essential for autonomous driving-related applications. Existing NeRF and 3DGS-based methods show promising results in achieving photorealistic renderings but require slow, per-scene optimization. We introduce EVolSplat, an efficient 3D Gaussian Splatting model for urban scenes that works in a feed-forward manner. Unlike existing feed-forward, pixel-aligned 3DGS methods, which often suffer from issues like multi-view inconsistencies and duplicated content, our approach predicts 3D Gaussians across multiple frames within a unified volume using a 3D convolutional network. This is achieved by initializing 3D Gaussians with noisy depth predictions, and then refining their geometric properties in 3D space and predicting color based on 2D textures. Our model also handles distant views and the sky with a flexible hemisphere background model. This enables us to perform fast, feed-forward reconstruction while achieving real-time rendering. Experimental evaluations on the KITTI-360 and Waymo datasets show that our method achieves state-of-the-art quality compared to existing feed-forward 3DGS- and NeRF-based methods. },
+  teaser = {Miao2025CVPR.gif},
+  website = {https://xdimlab.github.io/EVolSplat/},
+  selected = True,
+}
+
+
+@inproceedings{Yang2025CVPR,
+  title = {Prometheus: 3D-Aware Latent Diffusion Models for Feed-Forward Text-to-3D Scene Generation},
+  author = {Yang, Yuanbo and Shao, Jiahao and Li, Xinyang and Shen, Yujun and Geiger, Andreas and Liao, Yiyi<sup>&#x0266F;</sup>},
+  booktitle = CVPR,
+  year = {2025},
+  abstract = {In this work, we introduce Prometheus, a 3D-aware latent diffusion model for text-to-3D generation at both object and scene levels in seconds. We formulate 3D scene generation as multi-view, feed-forward, pixel-aligned 3D Gaussian generation within the latent diffusion paradigm. To ensure generalizability, we build our model upon pre-trained text-to-image generation model with only minimal adjustments, and further train it using a large number of images from both single-view and multi-view datasets. Furthermore, we introduce an RGB-D latent space into 3D Gaussian generation to disentangle appearance and geometry information, enabling efficient feed-forward generation of 3D Gaussians with better fidelity and geometry. Extensive experimental results demonstrate the effectiveness of our method in both feed-forward 3D Gaussian reconstruction and text-to-3D generation.},
+  teaser = {Yang2025CVPR.jpg},
+  pdf = {https://arxiv.org/pdf/2412.21117},
+  website = {https://freemty.github.io/project-prometheus/},
+  selected = True,
+}
 
 @inproceedings{Wu2024RAL,
   title = {DORec: Decomposed Object Reconstruction and Segmentation Utilizing 2D Self-Supervised Features},

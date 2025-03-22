@@ -41,6 +41,10 @@
   - firstname: ["Vladislav"]
     url: https://people.mpi-inf.mpg.de/~golyanik/
 
+"Guizilini":
+  - firstname: ["Vitor"]
+    url: https://scholar.google.com.br/citations?user=ow3r9ogAAAAJ&hl=en
+
 "Huang":
   - firstname: ["Lichao"]
     url: https://scholar.google.com/citations?user=F2e_jZMAAAAJ
@@ -76,6 +80,8 @@
 "Li":
   - firstname: ["Zizhang"]
     url: https://kyleleey.github.io/
+  - firstname: ["Sicheng"]
+    url: https://github.com/JasonLSC
 
 "Liu":
   - firstname: ["Yong", "Yong<sup>&#x0266F;</sup>"]
@@ -116,6 +122,10 @@
 "Pollefeys":
   - firstname: ["Marc", "M."]
     url: https://people.inf.ethz.ch/pomarc/ 
+
+"Poggi":
+  - firstname: ["Matteo"]
+    url: https://mattpoggi.github.io/
 
 "Pons-Moll":
   - firstname: ["Gerard"]
@@ -193,6 +203,10 @@
   - firstname: ["Yinghao", "Yinghao<sup>*</sup>"]
     url: https://justimyhxu.github.io/
 
+"Yan":
+  - firstname: ["Xu"]
+    url: https://yanx27.github.io/
+
 "Yeung":
   - firstname: ["Dit-Yan"]
     url: https://sites.google.com/view/dyyeung
@@ -212,6 +226,8 @@
 "Zhang":
   - firstname: ["Shangzhan"]
     url: https://zhanghe3z.github.io/
+  - firstname: ["Youmin"]
+    url: https://youmi-zym.github.io/
 
 "Zhong":
   - firstname: ["Fangxun"]
@@ -220,6 +236,8 @@
 "Zhou":
   - firstname: ["Xiaowei"]
     url: https://xzhou.me/
+  - firstname: ["Hongyu"]
+    url: https://hyzhou404.github.io/
 
 "Zhu":
   - firstname: ["Lanyun"]
