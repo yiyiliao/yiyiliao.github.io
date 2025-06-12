@@ -186,8 +186,10 @@
     url: https://people.mpi-inf.mpg.de/~theobalt/
 
 "Wang":
-  - firstname: ["Yue", "Y."]
+  - firstname: ["Yue"]
     url: https://ywang-zju.github.io/ 
+  - firstname: ["Yue2"]
+    url: https://yuewang.xyz/
   - firstname: ["Mengmeng"]
     url: https://sallymmx.github.io/
 

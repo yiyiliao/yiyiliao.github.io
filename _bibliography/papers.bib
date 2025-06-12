@@ -16,12 +16,14 @@
   year = {2025},
   abstract = {Immersive video offers a 6-Dof-free viewing experience, potentially playing a key role in future video technology. Recently, 4D Gaussian Splatting has gained attention as an effective approach for immersive video due to its high rendering efficiency and quality, though maintaining quality with manageable storage remains challenging. To address this, we introduce GIFStream, a novel 4D Gaussian representation using a canonical space and a deformation field enhanced with time-dependent feature streams. These feature streams enable complex motion modeling and allow efficient compression by leveraging their motion-awareness and temporal correspondence. Additionally, we incorporate both temporal and spatial compression networks for end-to-end compression. Experimental results show that GIFStream delivers high-quality immersive video at 30 Mbps, with real-time rendering and fast decoding on an RTX 4090.},
   teaser = {Li2025CVPR.jpg},
+  pdf = {https://arxiv.org/pdf/2505.07539},
+  website = {https://xdimlab.github.io/GIFStream/},
   selected = True,
 }
 
 @inproceedings{Shao2025CVPR,
   title = {Learning temporally consistent video depth from video diffusion priors},
-  author = {Shao, Jiahao and Yang, Yuanbo and Zhou, Hongyu and Zhang, Youmin and Shen, Yujun and Guizilini, Vitor and Wang, Yue and Poggi, Matteo and Liao, Yiyi<sup>&#x0266F;</sup>},
+  author = {Shao, Jiahao and Yang, Yuanbo and Zhou, Hongyu and Zhang, Youmin and Shen, Yujun and Guizilini, Vitor and Wang, Yue2 and Poggi, Matteo and Liao, Yiyi<sup>&#x0266F;</sup>},
   booktitle = CVPR,
   year = {2025},
   abstract = {This work addresses the challenge of streamed video depth estimation, which expects not only per-frame accuracy but, more importantly, cross-frame consistency. We argue that sharing contextual information between frames or clips is pivotal in fostering temporal consistency. Thus, instead of directly developing a depth estimator from scratch, we reformulate this predictive task into a conditional generation problem to provide contextual information within a clip and across clips. Specifically, we propose a consistent context-aware training and inference strategy for arbitrarily long videos to provide cross-clip context. We sample independent noise levels for each frame within a clip during training while using a sliding window strategy and initializing overlapping frames with previously predicted frames without adding noise. Moreover, we design an effective training strategy to provide context within a clip. Extensive experimental results validate our design choices and demonstrate the superiority of our approach, dubbed ChronoDepth.},
@@ -50,6 +52,7 @@
   year = {2025},
   abstract = {Novel view synthesis of urban scenes is essential for autonomous driving-related applications. Existing NeRF and 3DGS-based methods show promising results in achieving photorealistic renderings but require slow, per-scene optimization. We introduce EVolSplat, an efficient 3D Gaussian Splatting model for urban scenes that works in a feed-forward manner. Unlike existing feed-forward, pixel-aligned 3DGS methods, which often suffer from issues like multi-view inconsistencies and duplicated content, our approach predicts 3D Gaussians across multiple frames within a unified volume using a 3D convolutional network. This is achieved by initializing 3D Gaussians with noisy depth predictions, and then refining their geometric properties in 3D space and predicting color based on 2D textures. Our model also handles distant views and the sky with a flexible hemisphere background model. This enables us to perform fast, feed-forward reconstruction while achieving real-time rendering. Experimental evaluations on the KITTI-360 and Waymo datasets show that our method achieves state-of-the-art quality compared to existing feed-forward 3DGS- and NeRF-based methods. },
   teaser = {Miao2025CVPR.gif},
+  pdf = {https://arxiv.org/pdf/2503.20168},
   website = {https://xdimlab.github.io/EVolSplat/},
   selected = True,
 }
@@ -257,7 +260,7 @@
   teaser = {Shi2023CVPR.jpeg},
   website = {https://vivianszf.github.io/pof3d/},
   code = {https://github.com/VivianSZF/pof3d},
-  selected = True,
+  selected = False,
 }
 
 @inproceedings{Zhang2023CVPR,
@@ -270,7 +273,7 @@
   teaser = {Zhang2023CVPR.gif},
   website = {https://zju3dv.github.io/paintingnature/},
   code = {https://github.com/zhanghe3z/PaintingNature/blob/main/README.md},
-  selected = True,
+  selected = False,
 }
 
 
