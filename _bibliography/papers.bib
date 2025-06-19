@@ -9,6 +9,19 @@
 @STRING{NEURIPS = {Advances in Neural Information Processing Systems (NeurIPS)}}
 @STRING{ARXIV = {arXiv.org}}
 
+@ARTICLE{Fu2025TPAMI,
+  author = {Fu, Xiao and Zhang, Shangzhan and Chen, Tianrun and Lu, Yichong and Zhou, Xiaowei and Geiger, Andreas and Liao, Yiyi<sup>&#x0266F;</sup>},
+  title = {PanopticNeRF-360: Panoramic 3D-to-2D Label Transfer in Urban Scenes},
+  journal = TPAMI,
+  year = {2025},
+  abstract = {Training perception systems for self-driving cars requires substantial 2D annotations that are labor-intensive to manual label. While existing datasets provide rich annotations on pre-recorded sequences, they fall short in labeling rarely encountered viewpoints, potentially hampering the generalization ability for perception models. In this paper, we present PanopticNeRF-360, a novel approach that combines coarse 3D annotations with noisy 2D semantic cues to generate high-quality panoptic labels and images from any viewpoint. Our key insight lies in exploiting the complementarity of 3D and 2D priors to mutually enhance geometry and semantics. Specifically, we propose to leverage coarse 3D bounding primitives and noisy 2D semantic and instance predictions to guide geometry optimization, by encouraging predicted labels to match panoptic pseudo ground truth. Simultaneously, the improved geometry assists in filtering 3D\&2D annotation noise by fusing semantics in 3D space via a learned semantic field. To further enhance appearance, we combine MLP and hash grids to yield hybrid scene features, striking a balance between high-frequency appearance and contiguous semantics. Our experiments demonstrate PanopticNeRF-360's state-of-the-art performance over label transfer methods on the challenging urban scenes of the KITTI-360 dataset. Moreover, PanopticNeRF-360 enables omnidirectional rendering of high-fidelity, multi-view and spatiotemporally consistent appearance, semantic and instance labels.},
+  pdf = {https://arxiv.org/pdf/2309.10815},
+  code = {https://github.com/fuxiao0719/PanopticNeRF/tree/panopticnerf360},
+  teaser = {Fu2025TPAMI.gif},
+  selected = True,
+}
+
+
 @inproceedings{Li2025CVPR,
   title = {GIFStream: 4D Gaussian-based Immersive Video with Feature Stream},
   author = {Li, Hao and Li, Sicheng and Gao, Xiang and Batuer, Abudouaihati and Yu, Lu<sup>&#x0266F;</sup> and Liao, Yiyi<sup>&#x0266F;</sup>},
