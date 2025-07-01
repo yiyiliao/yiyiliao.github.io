@@ -17,21 +17,24 @@ Welcome to our X-D Lab! We are interested in exploring effective and efficient 2
 ### PhD Students
 Sicheng Li (co-supervised with [Prof. Lu Yu](https://mypage.zju.edu.cn/en/yul)) \\
 Sheng Miao \\
-Hongyu Zhou
+[Hongyu Zhou](https://hyzhou404.github.io/) \\
+Chaojie Ji \\
+[Jiaxin Huang](https://jaceyhuang.github.io/) \\
+Chunyang Li
 
 ### Master Students
-Chaojie Ji \\
-Hao Li \\
 Hanlei Guo \\
-[Jiaxin Huang](https://jaceyhuang.github.io/) \\
 Xianxu Xiang \\
-Chengzhen Wu
+Chengzhen Wu \\
+Jiabao Wang \\
+Kelei Liu 
 
 ### Research Interns
 [Jiahao Shao](https://jhaoshao.github.io/)
 
 ### Former Students/Interns
 [Xiao Fu](https://fuxiao0719.github.io/) (now PhD student at CUHK)\\
-[Xinya Chen](https://xinyachen21.github.io/) \\
-Lu Xu 
+[Xinya Chen](https://xinyachen21.github.io/) (now PhD student at MPI-I)\\
+Hao Li (now at HUAWEI) \\
+Lu Xu \\
 Shukai Zhang
