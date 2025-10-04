@@ -9,6 +9,30 @@
 @STRING{NEURIPS = {Advances in Neural Information Processing Systems (NeurIPS)}}
 @STRING{ARXIV = {arXiv.org}}
 
+@inproceedings{Lu2025NEURIPS,
+  author = {Lu, Yichong and Tian, Yuzhuo and Jiang, Zijin and Zhao, Yikun and Yang, Yuanbo and Ouyang, Hao and Hu, Haoji and Yu, Huimin and Shen, Yujun and Liao, Yiyi<sup>&#x0266F;</sup>},
+  title = {Orientation Matters: Making 3D Generative Models Orientation-Aligned},
+  booktitle = NEURIPS,
+  year = {2025},
+  abstract = {Humans intuitively perceive object shape and orientation from a single image, guided by strong priors about canonical poses. However, existing 3D generative models often produce misaligned results due to inconsistent training data, limiting their usability in downstream tasks. To address this gap, we introduce the task of orientation-aligned 3D object generation: producing 3D objects from single images with consistent orientations across categories. To facilitate this, we construct Objaverse-OA, a dataset of 14,832 orientation-aligned 3D models spanning 1,008 categories. Leveraging Objaverse-OA, we fine-tune two representative 3D generative models based on multi-view diffusion and 3D variational autoencoder frameworks to produce aligned objects that generalize well to unseen objects across various categories. Experimental results demonstrate the superiority of our method over post-hoc alignment approaches. Furthermore, we showcase downstream applications enabled by our aligned object generation, including zero-shot model-free object orientation estimation via analysis-by-synthesis and efficient arrow-based object manipulation.},
+  pdf = {https://arxiv.org/pdf/2506.08640},
+  teaser = {Lu2025NEURIPS.jpg},
+  website = {https://xdimlab.github.io/Orientation_Matters/},
+  selected = True,
+}
+
+@ARTICLE{Yang2025TPAMI,
+  author = {Yang, Yuanbo and Shen, Yujun and Wang, Yue and Geiger, Andreas and Liao, Yiyi<sup>&#x0266F;</sup>},
+  title = {PanopticNeRF-360: Panoramic 3D-to-2D Label Transfer in Urban Scenes},
+  journal = TPAMI,
+  year = {2025},
+  abstract = {Despite the rapid progress in generative radiance fields, most existing methods focus on object-centric applications and are not able to generate complex urban scenes. In this paper, we propose UrbanGen, a solution for the challenging task of generating urban radiance fields with photorealistic rendering, accurate geometry, high controllability, and diverse city styles. Our key idea is to leverage a coarse 3D panoptic prior, represented by a semantic voxel grid for stuff and bounding boxes for countable objects, to condition a compositional generative radiance field. This panoptic prior simplifies the task of learning complex urban geometry, enables disentanglement of stuff and objects, and provides versatile control over both. Moreover, by combining semantic and geometry losses with adversarial training, our method faithfully adheres to the input conditions, allowing for joint rendering of semantic and depth maps alongside RGB images. In addition, we collect a unified dataset with images and their panoptic priors in the same format from 3 diverse real-world datasets: KITTI-360, nuScenes, and Waymo, and train a city style-aware model on this data. Our systematic study shows that UrbanGen outperforms state-of-the-art generative radiance field baselines in terms of image fidelity and geometry accuracy for urban scene generation. Furthermore, UrbenGen brings a new set of controllability features, including large camera movements, stuff editing, and city style control.},
+  pdf = {https://ieeexplore.ieee.org/abstract/document/11130421},
+  teaser = {Yang2025TPAMI.gif},
+  website = {https://freemty.github.io/project-urbangen/},
+  selected = True,
+}
+
 @ARTICLE{Fu2025TPAMI,
   author = {Fu, Xiao and Zhang, Shangzhan and Chen, Tianrun and Lu, Yichong and Zhou, Xiaowei and Geiger, Andreas and Liao, Yiyi<sup>&#x0266F;</sup>},
   title = {PanopticNeRF-360: Panoramic 3D-to-2D Label Transfer in Urban Scenes},
@@ -19,6 +43,18 @@
   code = {https://github.com/fuxiao0719/PanopticNeRF/tree/panopticnerf360},
   teaser = {Fu2025TPAMI.gif},
   website = {https://fuxiao0719.github.io/projects/panopticnerf360/},
+  selected = True,
+}
+
+@inproceedings{Huang2025ICCV,
+  title = {Vivid4D: Improving 4D Reconstruction from Monocular Video by Video Inpainting},
+  author = {Huang, Jiaxin and Miao, Sheng and Yang, Bangbang and Ma, Yuewen and Liao, Yiyi<sup>&#x0266F;</sup>},
+  booktitle = ICCV,
+  year = {2025},
+  abstract = {Reconstructing 4D dynamic scenes from casually captured monocular videos is valuable but highly challenging, as each timestamp is observed from a single viewpoint. We introduce Vivid4D, a novel approach that enhances 4D monocular video synthesis by augmenting observation views — synthesizing multi-view videos from a monocular input. Unlike existing methods that either solely leverage geometric priors for supervision or use generative priors while overlooking geometry, we integrate both. This reformulates view augmentation as a video inpainting task, where observed views are warped into new viewpoints based on monocular depth priors. To achieve this, we train a video inpainting model on unposed web videos with synthetically generated masks that mimic warping occlusions, ensuring spatially and temporally consistent completion of missing regions. To further mitigate inaccuracies in monocular depth priors, we introduce an iterative view augmentation strategy and a robust reconstruction loss. Experiments demonstrate that our method effectively improves monocular 4D scene reconstruction and completion.},
+  teaser = {Huang2025ICCV.jpg},
+  pdf = {https://arxiv.org/pdf/2504.11092},
+  website = {https://xdimlab.github.io/Vivid4D/},
   selected = True,
 }
 
@@ -78,7 +114,7 @@
   booktitle = CVPR,
   year = {2025},
   abstract = {In this work, we introduce Prometheus, a 3D-aware latent diffusion model for text-to-3D generation at both object and scene levels in seconds. We formulate 3D scene generation as multi-view, feed-forward, pixel-aligned 3D Gaussian generation within the latent diffusion paradigm. To ensure generalizability, we build our model upon pre-trained text-to-image generation model with only minimal adjustments, and further train it using a large number of images from both single-view and multi-view datasets. Furthermore, we introduce an RGB-D latent space into 3D Gaussian generation to disentangle appearance and geometry information, enabling efficient feed-forward generation of 3D Gaussians with better fidelity and geometry. Extensive experimental results demonstrate the effectiveness of our method in both feed-forward 3D Gaussian reconstruction and text-to-3D generation.},
-  teaser = {Yang2025CVPR.jpg},
+  teaser = {Yang2025CVPR.gif},
   pdf = {https://arxiv.org/pdf/2412.21117},
   website = {https://freemty.github.io/project-prometheus/},
   selected = True,
