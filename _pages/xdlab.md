@@ -11,14 +11,15 @@ logo: assets/logo/xdlab_logo.jpg
 
 Welcome to our X-D Lab! We are interested in exploring effective and efficient 2D, 3D and 4D representations for various applications in autonomous driving, robotics and immersive media. 
 
+<img src="/xdlab/assets/gallary/xdlab2025.jpg" alt="image" width="100%" height="auto">
 <img src="/xdlab/assets/gallary/xdlab2024.jpg" alt="image" width="100%" height="auto">
 <img src="/xdlab/assets/gallary/202304.jpg" alt="image" width="100%" height="auto">
 
 ### PhD Students
-Sicheng Li (co-supervised with [Prof. Lu Yu](https://mypage.zju.edu.cn/en/yul)) \\
-Sheng Miao \\
+[Sicheng Li](https://jasonlsc.github.io/) (co-supervised with [Prof. Lu Yu](https://mypage.zju.edu.cn/en/yul)) \\
+[Sheng Miao](https://openreview.net/profile?id=~Sheng_Miao2) \\
 [Hongyu Zhou](https://hyzhou404.github.io/) \\
-Chaojie Ji \\
+[Chaojie Ji](https://scholar.google.com/citations?user=TNFNsWMAAAAJ&hl=zh-CN) \\
 [Jiaxin Huang](https://jaceyhuang.github.io/) \\
 Chunyang Li
 
@@ -27,10 +28,12 @@ Hanlei Guo \\
 Xianxu Xiang \\
 Chengzhen Wu \\
 Jiabao Wang \\
-Kelei Liu 
+Kelei Liu \\
+Woohyun Jung 
 
 ### Research Interns
-[Jiahao Shao](https://jhaoshao.github.io/)
+[Jiahao Shao](https://jhaoshao.github.io/) \\
+Yuanbo Yang
 
 ### Former Students/Interns
 [Xiao Fu](https://fuxiao0719.github.io/) (now PhD student at CUHK)\\
