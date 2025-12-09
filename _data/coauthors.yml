@@ -2,6 +2,10 @@
   - firstname: ["Dongfeng"]
     url: https://scholar.google.com/citations?user=aubQLGYAAAAJ&hl=zh-CN
 
+"Bao":
+  - firstname: ["Hujun"]
+    url: http://www.cad.zju.edu.cn/home/bao/
+
 "Black":
   - firstname: ["Michael", "M."]
     url: https://ps.is.tuebingen.mpg.de/person/black 
@@ -44,6 +48,10 @@
 "Guizilini":
   - firstname: ["Vitor"]
     url: https://scholar.google.com.br/citations?user=ow3r9ogAAAAJ&hl=en
+
+"Hu":
+  - firstname: ["Ruizhen"]
+    url: https://csse.szu.edu.cn/staff/ruizhenhu/
 
 "Huang":
   - firstname: ["Lichao"]
@@ -208,6 +216,8 @@
 "Xu":
   - firstname: ["Yinghao", "Yinghao<sup>*</sup>"]
     url: https://justimyhxu.github.io/
+  - firstname: ["Zhen", "Zhen<sup>*</sup>"]
+    url: https://zhenx.me/
 
 "Yan":
   - firstname: ["Xu"]
@@ -242,7 +252,7 @@
 "Zhou":
   - firstname: ["Xiaowei"]
     url: https://xzhou.me/
-  - firstname: ["Hongyu"]
+  - firstname: ["Hongyu", "Hongyu<sup>*</sup>"]
     url: https://hyzhou404.github.io/
 
 "Zhu":
